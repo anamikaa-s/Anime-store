@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Account</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+
+            background-image: url("merch.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-family: Arial, sans-serif;
+            color: white;
+
+            padding: 40px 0;
+        }
+
+
+        /* REGISTER BOX */
+
+        #register {
+            width: 550px;
+            margin-left: 390px;
+            padding: 35px;
+
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 20px;
+
+            background: rgba(0, 0, 0, 0.45);
+
+            backdrop-filter: blur(12px);
+
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+        }
+
+
+        /* HEADING */
+
+        h1 {
+            text-align: center;
+
+            margin-top: 0;
+            margin-bottom: 8px;
+
+            font-size: 32px;
+        }
+
+
+        .subtitle {
+            text-align: center;
+
+            color: #ddd;
+
+            margin-bottom: 25px;
+        }
+
+
+        /* INPUT BOX */
+
+        .input-box {
+            height: 48px;
+            width: 100%;
+
+            display: flex;
+            align-items: center;
+
+            border: 1px solid rgba(255, 255, 255, 0.8);
+
+            border-radius: 25px;
+
+            padding: 0 15px;
+
+            margin-bottom: 15px;
+
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+
+        .input-box input {
+            flex: 1;
+
+            border: none;
+            outline: none;
+
+            background: transparent;
+
+            color: white;
+
+            font-size: 15px;
+        }
+
+
+        .input-box input::placeholder {
+            color: rgba(255, 255, 255, 0.75);
+        }
+
+
+        .input-box i {
+            font-size: 17px;
+        }
+
+
+        /* ADDRESS TITLE */
+
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+
+        /* TWO INPUTS IN ONE ROW */
+
+        .row {
+            display: flex;
+            gap: 15px;
+        }
+
+
+        .row .input-box {
+            flex: 1;
+        }
+
+
+        /* REGISTER BUTTON */
+
+        #register-btn {
+            width: 100%;
+            height: 45px;
+
+            border: none;
+            border-radius: 25px;
+
+            background: white;
+            color: black;
+
+            font-size: 16px;
+            font-weight: bold;
+
+            cursor: pointer;
+
+            margin-top: 10px;
+        }
+
+
+        #register-btn:hover {
+            background: #ddd;
+        }
+
+
+        /* LOGIN LINK */
+
+        .login-link {
+            text-align: center;
+
+            margin-top: 20px;
+        }
+
+
+        .login-link a {
+            color: white;
+
+            font-weight: bold;
+
+            text-decoration: none;
+        }
+
+
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+
+
+        /* HOME BUTTON */
+
+        .home {
+            position: absolute;
+
+            top: 30px;
+            left: 40px;
+
+            color: white;
+
+            text-decoration: none;
+
+            padding: 10px 20px;
+
+            border: 1px solid white;
+
+            border-radius: 25px;
+        }
+
+
+        .home:hover {
+            background: white;
+            color: black;
+        }
+
+
+        /* MOBILE */
+
+        @media (max-width: 600px) {
+
+            #register {
+                width: 90%;
+                padding: 25px;
+            }
+
+            .row {
+                flex-direction: column;
+                gap: 0;
+            }
+
+            .home {
+                top: 15px;
+                left: 15px;
+            }
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- HOME BUTTON -->
+
+    <a href="index.html" class="home">
+
+        <i class="fa fa-home"></i>
+
+        Home
+
+    </a>
+
+
+
+    <!-- REGISTER FORM -->
+
+    <div id="register">
+
+        <h1>Create Account</h1>
+
+        <p class="subtitle">
+            Create your account to shop your favourite anime merchandise.
+        </p>
+
+
+        <form>
+
+
+            <!-- PERSONAL DETAILS -->
+
+            <div class="section-title">
+                Personal Details
+            </div>
+
+
+            <!-- FULL NAME -->
+
+            <div class="input-box">
+
+                <input type="text" placeholder="Full Name *" required>
+
+                <i class="fa fa-user"></i>
+
+            </div>
+
+
+            <!-- EMAIL -->
+
+            <div class="input-box">
+
+                <input type="email" placeholder="Email Address *" required>
+
+                <i class="fa fa-envelope"></i>
+
+            </div>
+
+
+            <!-- PHONE -->
+
+            <div class="input-box">
+
+                <input type="tel" placeholder="Phone Number *" required>
+
+                <i class="fa fa-phone"></i>
+
+            </div>
+
+
+
+            <!-- DELIVERY ADDRESS -->
+
+            <div class="section-title">
+                Delivery Address
+            </div>
+
+
+            <!-- HOUSE -->
+
+            <div class="input-box">
+
+                <input type="text" placeholder="House / Building Name *" required>
+
+                <i class="fa fa-home"></i>
+
+            </div>
+
+
+            <!-- STREET -->
+
+            <div class="input-box">
+
+                <input type="text" placeholder="Street / Area *" required>
+
+                <i class="fa fa-map-marker"></i>
+
+            </div>
+
+
+            <!-- CITY + STATE -->
+
+            <div class="row">
+
+                <div class="input-box">
+
+                    <input type="text" placeholder="City *" required>
+
+                </div>
+
+
+                <div class="input-box">
+
+                    <input type="text" placeholder="State *" required>
+
+                </div>
+
+            </div>
+
+
+            <!-- PINCODE + COUNTRY -->
+
+            <div class="row">
+
+                <div class="input-box">
+
+                    <input type="text" placeholder="PIN Code *" maxlength="6" required>
+
+                    <i class="fa fa-map-pin"></i>
+
+                </div>
+
+
+                <div class="input-box">
+
+                    <input type="text" placeholder="Country *" value="India" required>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ACCOUNT PASSWORD -->
+
+            <div class="section-title">
+                Account Security
+            </div>
+
+
+            <!-- PASSWORD -->
+
+            <div class="input-box">
+
+                <input type="password" placeholder="Password *" required>
+
+                <i class="fa fa-lock"></i>
+
+            </div>
+
+
+            <!-- CONFIRM PASSWORD -->
+
+            <div class="input-box">
+
+                <input type="password" placeholder="Confirm Password *" required>
+
+                <i class="fa fa-lock"></i>
+
+            </div>
+
+
+
+            <!-- CREATE ACCOUNT -->
+
+            <input type="submit" value="Create Account" id="register-btn">
+
+
+        </form>
+
+
+
+        <!-- LOGIN LINK -->
+
+        <div class="login-link">
+
+            Already have an account?
+
+            <a href="login.html">
+                Sign In
+            </a>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sign In</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+
+            background-image: url(merch.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(248, 248, 249);
+        }
+
+
+        /* LOGIN FORM */
+
+        #form {
+            width: 400px;
+
+            padding: 35px;
+            margin-left: 600px;
+
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 20px;
+
+            background: rgba(0, 0, 0, 0.45);
+
+            backdrop-filter: blur(12px);
+
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+
+            color: white;
+        }
+
+
+        /* HEADING */
+
+        h1 {
+            color: white;
+
+            text-align: center;
+
+            font-size: 32px;
+
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+
+
+        /* EMAIL + PASSWORD */
+
+        #d1,
+        #d2 {
+
+            width: 100%;
+
+            height: 48px;
+
+            display: flex;
+
+            align-items: center;
+
+            border: 1px solid rgba(255, 255, 255, 0.8);
+
+            border-radius: 25px;
+
+            padding: 0 15px;
+
+            margin-bottom: 15px;
+
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+
+        #d1 input,
+        #d2 input {
+
+            flex: 1;
+
+            border: none;
+
+            outline: none;
+
+            background: transparent;
+
+            color: white;
+
+            font-size: 15px;
+        }
+
+
+        #d1 input::placeholder,
+        #d2 input::placeholder {
+
+            color: rgba(255, 255, 255, 0.75);
+        }
+
+
+        #d1 i,
+        #d2 i {
+
+            color: white;
+
+            font-size: 18px;
+        }
+
+
+        /* REMEMBER + FORGOT */
+
+        .options {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            margin: 15px 3px 25px;
+
+            font-size: 14px;
+        }
+
+
+        .remember {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 6px;
+        }
+
+
+        .remember input {
+
+            width: 15px;
+            height: 15px;
+        }
+
+
+        .options a {
+
+            color: white;
+
+            text-decoration: none;
+        }
+
+
+        .options a:hover {
+
+            text-decoration: underline;
+        }
+
+
+        /* LOGIN BUTTON */
+
+        #login {
+
+            width: 100%;
+
+            height: 45px;
+
+            border: none;
+
+            border-radius: 25px;
+
+            background: white;
+
+            color: black;
+
+            font-size: 16px;
+
+            font-weight: bold;
+
+            cursor: pointer;
+
+            transition: 0.3s;
+        }
+
+
+        #login:hover {
+
+            background: #ddd;
+
+            transform: scale(1.02);
+        }
+
+
+        /* CREATE ACCOUNT */
+        #account {
+            display: block;
+            width: 100%;
+            height: 45px;
+
+            border: 1px solid white;
+            border-radius: 25px;
+
+            background-color: white;
+            color: black;
+
+            text-align: center;
+            line-height: 45px;
+
+            text-decoration: none;
+            font-weight: bold;
+
+            margin-top: 12px;
+            cursor: pointer;
+            font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+        }
+
+        #account:hover {
+            background-color: #ddd;
+        }
+
+
+        /* GOOGLE */
+
+        #google {
+
+            width: 100%;
+
+            height: 45px;
+
+            margin-top: 15px;
+
+            border: 1px solid rgba(255, 255, 255, 0.7);
+
+            border-radius: 8px;
+
+            background: white;
+
+            color: #333;
+
+            font-size: 15px;
+
+            cursor: pointer;
+        }
+
+
+        #google:hover {
+
+            background: #eee;
+        }
+
+
+        #google i {
+
+            margin-right: 8px;
+        }
+
+        .home-btn {
+            position: absolute;
+            top: 30px;
+            left: 40px;
+
+            color: white;
+            text-decoration: none;
+
+            font-size: 18px;
+            font-weight: bold;
+
+            padding: 10px 20px;
+
+            border: 1px solid white;
+            border-radius: 25px;
+
+            background: rgba(0, 0, 0, 0.3);
+
+            transition: 0.3s;
+        }
+
+        .home-btn:hover {
+            background: white;
+            color: black;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <a href="index.html" class="home-btn">
+        <i class="fa fa-home"></i>
+        Home
+    </a>
+
+    <div id="form">
+
+        <h1>Sign In</h1>
+
+
+        <form>
+
+
+            <!-- EMAIL -->
+
+            <div id="d1">
+
+                <input type="email" placeholder="Email address *">
+
+                <i class="fa fa-envelope"></i>
+
+            </div>
+
+
+            <!-- PASSWORD -->
+
+            <div id="d2">
+
+                <input type="password" placeholder="Password *">
+
+                <i class="fa fa-lock"></i>
+
+            </div>
+
+
+            <!-- REMEMBER + FORGOT -->
+
+            <div class="options">
+
+                <label class="remember">
+
+                    <input type="checkbox">
+
+                    Remember me
+
+                </label>
+
+
+                <a href="#">
+                    Forgot password?
+                </a>
+
+            </div>
+
+
+            <!-- LOGIN -->
+
+            <input type="submit" id="login" value="Login">
+
+
+            <!-- CREATE ACCOUNT -->
+
+            <a href="register.html" id="account">
+                Create an Account
+            </a>
+
+
+            <!-- GOOGLE -->
+
+            <button type="button" id="google">
+
+                <i class="fa fa-google"></i>
+
+                Continue with Google
+
+            </button>
+
+
+        </form>
+
+    </div>
+
+
+</body>
+
+</html>

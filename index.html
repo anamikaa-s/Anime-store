@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- chatgpt -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- chatgpt -->
+
+    <style>
+        .scroll {
+            display: flex;
+            width: max-content;
+            animation: scroll 15s linear infinite;
+        }
+
+        @keyframes scroll {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-50%);
+            }
+        }
+
+        .navbar {
+            background: linear-gradient(to right,
+                    rgb(40, 0, 0),
+                    rgb(90, 2, 2),
+                    rgb(90, 2, 2));
+
+
+        }
+
+        /* ronin hunter */
+        .image {
+            width: 100%;
+            height: 100vh;
+            object-fit: contain;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        /* shop by anime */
+        .category-select {
+            background-color: transparent;
+            color: #e7e5e4;
+            border: none;
+            outline: none;
+            font-size: 20px;
+            font-weight: 600;
+            cursor: pointer;
+            padding: 8px 10px;
+        }
+
+        .category-select:hover {
+            color: #fca5a5;
+        }
+
+        .category-select option {
+            background-color: rgb(40, 0, 0);
+            color: white;
+            font-size: 17px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="bg-neutral-800 py-2 overflow-hidden fixed top-0 left-0 w-full z-50">
+
+        <div class="scroll">
+
+            <span class="text-neutral-50 font-bold whitespace-nowrap">
+                C.O.D Available
+                <span class="mx-8">•</span>
+                Free shipping on post-paid orders
+                <span class="mx-8">•</span>
+                15% off on limited products
+                <span class="mx-8">•</span>
+                Extra 5% Off On First Order
+                <span class="mx-8">•</span>
+                Get Free bees above ₹1599
+                <span class="mx-8">•</span>
+            </span>
+
+            <span class="text-neutral-50 font-bold whitespace-nowrap">
+                C.O.D Available
+                <span class="mx-8">•</span>
+                Free shipping on post-paid orders
+                <span class="mx-8">•</span>
+                15% off on limited products
+                <span class="mx-8">•</span>
+                Extra 5% Off On First Order
+                <span class="mx-8">•</span>
+                Get Free bees above ₹1599
+                <span class="mx-8">•</span>
+            </span>
+
+        </div>
+
+    </div>
+    <!-- this is the scroll content -->
+
+    <!-- the nav bar -->
+    <div class="flex navbar sticky top-[40px] left-0 w-full h-32 items-center z-40">
+
+        <!-- BIG LOGO - LEFT -->
+        <div class="w-48 flex-shrink-0 m-0 p-0">
+            <img src="anime logo.png" alt="Ronin Hunter" class="w-48 h-32 object-contain -ml-6">
+        </div>
+
+        <div class="ml-5 mr-2 whitespace-nowrap leading-none">
+
+            <h1 class="text-4xl font-black tracking-wider text-white">
+                ANIME
+            </h1>
+
+            <p class="text-xs tracking-[0.35em] text-red-700 font-semibold ml-1">
+                STORE
+            </p>
+
+        </div>
+
+        <!-- MENU -->
+        <div class="flex items-center ml-14 whitespace-nowrap">
+
+            <a href="index.html" class="text-stone-200 mx-4 text-lg font-semibold tracking-wide
+          hover:text-red-300 transition" style="font-family: 'Montserrat', sans-serif;">
+                Home
+            </a>
+
+            <a href="" class="text-stone-200 mx-4 text-lg font-semibold tracking-wide
+          hover:text-red-300 transition" style="font-family: 'Montserrat', sans-serif;">
+                Shop
+            </a>
+
+
+            <!-- ANIME CATEGORY -->
+
+            <div class="relative ml-14 group">
+
+                <!-- CATEGORY BUTTON -->
+                <button class="flex items-center gap-2 text-stone-200 text-lg font-semibold
+           tracking-wide hover:text-red-300 transition cursor-pointer" style="font-family: 'Montserrat', sans-serif;">
+
+                    Shop by Anime
+
+                    <i class="fa fa-angle-down text-sm"></i>
+
+                </button>
+
+
+                <!-- DROPDOWN -->
+
+                <div class="absolute left-0 top-full mt-5
+               w-56
+               bg-[rgb(40,0,0)]
+               rounded-b-xl
+               shadow-2xl
+               py-3
+               opacity-0 invisible
+               group-hover:opacity-100
+               group-hover:visible
+               transition-all duration-200
+               z-50">
+
+
+                    <!-- ONE PIECE -->
+
+                    <a href="onepiece.html" class="block px-6 py-3 text-stone-200 text-base
+                  hover:bg-[rgb(90,2,2)]
+                  hover:text-red-200 transition">
+
+                        One Piece
+
+                    </a>
+
+
+                    <!-- NARUTO -->
+
+                    <a href="naruto.html" class="block px-6 py-3 text-stone-200 text-base
+                  hover:bg-[rgb(90,2,2)]
+                  hover:text-red-200 transition">
+
+                        Naruto
+
+                    </a>
+
+
+                    <!-- BLACK CLOVER -->
+
+                    <a href="dragonball.html" class="block px-6 py-3 text-stone-200 text-base
+                  hover:bg-[rgb(90,2,2)]
+                  hover:text-red-200 transition">
+
+                       Dragon Ball Z
+
+                    </a>
+
+
+                    <!-- DEMON SLAYER -->
+
+                    <a href="demonslayer.html" class="block px-6 py-3 text-stone-200 text-base
+                  hover:bg-[rgb(90,2,2)]
+                  hover:text-red-200 transition">
+
+                        Demon Slayer
+
+                    </a>
+
+
+                    <!-- JUJUTSU KAISEN -->
+
+                    <a href="jujutsukaisen.html" class="block px-6 py-3 text-stone-200 text-base
+                  hover:bg-[rgb(90,2,2)]
+                  hover:text-red-200 transition">
+
+                        Jujutsu Kaisen
+
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- SEARCH -->
+        <div class="ml-auto text-stone-200 border-2 rounded-xl h-10 px-3 flex items-center">
+
+            <input type="text" placeholder="search..."
+                class="placeholder:text-stone-200 font-semibold outline-none bg-transparent w-44">
+
+            <i class="fa fa-search ml-2"></i>
+
+        </div>
+
+
+        <!-- ICONS -->
+        <div class="flex items-center ml-4 h-10">
+
+            <a href="wishlist.html" class="text-stone-200 mx-2 text-xl flex items-center justify-center">
+                <i class="fa fa-heart-o"></i>
+            </a>
+
+            <a href="cart.html" class="text-stone-200 mx-2 text-xl flex items-center justify-center">
+                <i class="fa fa-shopping-cart"></i>
+            </a>
+
+            <a href="login.html" class="text-stone-200 mx-2 text-xl flex items-center justify-center">
+                <i class="fa fa-user"></i>
+            </a>
+
+        </div>
+
+    </div>
+    <!-- backgroung picture -->
+    <div class="image">
+        <img src="merch.png" alt="">
+    </div>
+
+    <!-- CHOOSE YOUR ANIME -->
+    <section class="mx-4 md:mx-8 mt-8 mb-8 border border-stone-200 rounded-2xl bg-white px-8 pt-36 pb-8">
+
+        <!-- Heading -->
+        <div class="flex items-center justify-between mb-7">
+
+            <div class="flex items-center gap-4">
+
+                <!-- Anime Logo -->
+                <div class="text-red-700 text-4xl">
+                    <i class="fa fa-superpowers"></i>
+                </div>
+
+                <div>
+                    <h2 class="text-2xl font-bold tracking-wide text-stone-900">
+                        CHOOSE YOUR ANIME
+                    </h2>
+
+                    <p class="text-sm text-stone-500 mt-1">
+                        Explore your favorite series and shop everything in one place.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- View All Button -->
+            <a href="anime.html" class="border-2 border-stone-800 rounded-md px-6 py-3
+                  text-sm font-semibold text-stone-800
+                  hover:bg-stone-900 hover:text-white transition">
+                VIEW ALL ›
+            </a>
+
+        </div>
+
+
+        <!-- Anime Cards -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-5">
+
+            <!-- One Piece -->
+            <div class="group">
+                <div class="h-52 overflow-hidden rounded-xl">
+                    <img src="one peice.png" alt="One Piece" class="w-full h-full object-cover
+                            group-hover:scale-105 transition duration-300">
+                </div>
+
+                <h3 class="mt-3 text-sm font-bold text-stone-900">
+                    ONE PIECE
+                </h3>
+
+                <p class="text-xs text-stone-400 mt-2">
+                    13+ Products
+                </p>
+
+                <a href="onepiece.html" class="inline-block mt-2 text-xs font-bold text-stone-900
+                      hover:text-orange-500">
+                    EXPLORE ›
+                </a>
+            </div>
+
+
+            <!-- Dragon Ball Z -->
+            <div class="group">
+                <div class="h-52 overflow-hidden rounded-xl">
+                    <img src="dragon ball z.png" alt="Dragon Ball Z" class="w-full h-full object-cover
+                            group-hover:scale-105 transition duration-300">
+                </div>
+
+                <h3 class="mt-3 text-sm font-bold text-stone-900">
+                    DRAGON BALL Z
+                </h3>
+
+                <p class="text-xs text-stone-400 mt-2">
+                    79+ Products
+                </p>
+
+                <a href="dragonball.html" class="inline-block mt-2 text-xs font-bold text-stone-900
+                      hover:text-orange-500">
+                    EXPLORE ›
+                </a>
+            </div>
+
+
+            <!-- Demon Slayer -->
+            <div class="group">
+                <div class="h-52 overflow-hidden rounded-xl">
+                    <img src="demon slayer.png" alt="Demon Slayer" class="w-full h-full object-cover
+                            group-hover:scale-105 transition duration-300">
+                </div>
+
+                <h3 class="mt-3 text-sm font-bold text-stone-900">
+                    DEMON SLAYER
+                </h3>
+
+                <p class="text-xs text-stone-400 mt-2">
+                    60+ Products
+                </p>
+
+                <a href="demonslayer.html" class="inline-block mt-2 text-xs font-bold text-stone-900
+                      hover:text-orange-500">
+                    EXPLORE ›
+                </a>
+            </div>
+
+
+            <!-- Naruto -->
+            <div class="group">
+                <div class="h-52 overflow-hidden rounded-xl">
+                    <img src="naruto.png" alt="Naruto" class="w-full h-full object-cover
+                            group-hover:scale-105 transition duration-300">
+                </div>
+
+                <h3 class="mt-3 text-sm font-bold text-stone-900">
+                    NARUTO
+                </h3>
+
+                <p class="text-xs text-stone-400 mt-2">
+                    19+ Products
+                </p>
+
+                <a href="naruto.html" class="inline-block mt-2 text-xs font-bold text-stone-900
+                      hover:text-orange-500">
+                    EXPLORE ›
+                </a>
+            </div>
+
+
+            <!-- Jujutsu Kaisen -->
+            <div class="group">
+                <div class="h-52 overflow-hidden rounded-xl">
+                    <img src="jjk.png" alt="Jujutsu Kaisen" class="w-full h-full object-cover
+                            group-hover:scale-105 transition duration-300">
+                </div>
+
+                <h3 class="mt-3 text-sm font-bold text-stone-900">
+                    JUJUTSU KAISEN
+                </h3>
+
+                <p class="text-xs text-stone-400 mt-2">
+                    49+ Products
+                </p>
+
+                <a href="jujutsukaisen.html" class="inline-block mt-2 text-xs font-bold text-stone-900
+                      hover:text-orange-500">
+                    EXPLORE ›
+                </a>
+            </div>
+
+
+            <!-- Sanrio -->
+            <div class="group">
+                <div class="h-52 overflow-hidden rounded-xl">
+                    <img src="blck clover.png" alt="Sanrio" class="w-full h-full object-cover
+                            group-hover:scale-105 transition duration-300">
+                </div>
+
+                <h3 class="mt-3 text-sm font-bold text-stone-900">
+                    BLACK CLOVER
+                </h3>
+
+                <p class="text-xs text-stone-400 mt-2">
+                    16+ Products
+                </p>
+
+                <a href="jujutsukaisen.html" class="inline-block mt-2 text-xs font-bold text-stone-900
+                      hover:text-orange-500">
+                    EXPLORE ›
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- -------------COLLECTIONS ------------ -->
+
+    <section class="bg-white px-8 py-10">
+
+        <!-- Anime Logo -->
+        <div class="flex items-center gap-5 mb-7">
+
+            <!-- Anime Logo -->
+            <div class="text-red-700 text-4xl flex-shrink-0">
+                <i class="fa fa-superpowers"></i>
+            </div>
+
+            <!-- Text -->
+            <div class="flex flex-col">
+                <h2 class="text-2xl font-bold text-neutral-900">
+                    SHOP BY TYPES
+                </h2>
+
+                <p class="text-stone-500 mt-1">
+                    Explore your favorite series and shop everything in one place.
+                </p>
+            </div>
+
+        </div>
+        <div class="max-w-7xl mx-auto">
+
+            <div class="grid grid-cols-4 grid-rows-2 gap-4 h-[400px]">
+
+                <!-- COLLECTOR STATUES -->
+                <div class="relative row-span-2 overflow-hidden rounded-2xl border border-stone-700 group">
+
+                    <img src="H action fig.png" alt="Collector Statues" class="absolute inset-0 w-full h-full object-cover
+                            group-hover:scale-105 transition duration-500">
+
+                    <div class="absolute inset-0 bg-gradient-to-t
+                            from-black/90 via-black/20 to-transparent">
+                    </div>
+
+                    <div class="absolute bottom-5 left-5 text-white">
+                        <h3 class="text-lg font-bold">
+                            Collector Statues
+                        </h3>
+
+                        <p class="text-xs text-stone-300">
+                            Scale Figures
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- KEYCHAINS -->
+                <div class="relative overflow-hidden rounded-2xl border border-stone-700 group">
+
+                    <img src="H keychain.png" alt="Keychains" class="absolute inset-0 w-full h-full object-cover
+                            group-hover:scale-105 transition duration-500">
+
+                    <div class="absolute inset-0 bg-gradient-to-t
+                            from-black/80 to-transparent">
+                    </div>
+
+                    <div class="absolute bottom-5 left-4 text-white">
+                        <h3 class="font-bold">Keychains</h3>
+                        <p class="text-xs text-stone-300">121 products</p>
+                    </div>
+
+                </div>
+
+
+                <!-- KATANAS -->
+                <div class="relative overflow-hidden rounded-2xl border border-stone-700 group">
+
+                    <img src="H katana.png" alt="Katanas & Swords" class="absolute inset-0 w-full h-full object-cover
+                            group-hover:scale-105 transition duration-500">
+
+                    <div class="absolute inset-0 bg-gradient-to-t
+                            from-black/80 to-transparent">
+                    </div>
+
+                    <div class="absolute bottom-5 left-4 text-white">
+                        <h3 class="font-bold">Katanas & Swords</h3>
+                        <p class="text-xs text-stone-300">Replicas</p>
+                    </div>
+
+                </div>
+
+
+                <!-- HEAD GEARS -->
+                <div class="relative overflow-hidden rounded-2xl border border-stone-700 group">
+
+                    <img src="H hat.png" alt="Head Gears" class="absolute inset-0 w-full h-full object-cover
+                            group-hover:scale-105 transition duration-500">
+
+                    <div class="absolute inset-0 bg-gradient-to-t
+                            from-black/80 to-transparent">
+                    </div>
+
+                    <div class="absolute bottom-5 left-4 text-white">
+                        <h3 class="font-bold">Head Gears</h3>
+                        <p class="text-xs text-stone-300">Masks & Helmets</p>
+                    </div>
+
+                </div>
+
+
+                <!-- LAMPS -->
+                <div class="relative overflow-hidden rounded-2xl border border-stone-700 group">
+
+                    <img src="H light.png" alt="Lamps & Lights" class="absolute inset-0 w-full h-full object-cover
+                            group-hover:scale-105 transition duration-500">
+
+                    <div class="absolute inset-0 bg-gradient-to-t
+                            from-black/80 to-transparent">
+                    </div>
+
+                    <div class="absolute bottom-5 left-4 text-white">
+                        <h3 class="font-bold">Lamps & Lights</h3>
+                        <p class="text-xs text-stone-300">LED & Glow</p>
+                    </div>
+
+                </div>
+
+
+                <!-- WALL ART -->
+                <div class="relative overflow-hidden rounded-2xl border border-stone-700 group">
+
+                    <img src="H wall decor.png" alt="Wall Art & Decor" class="absolute inset-0 w-full h-full object-cover
+                            group-hover:scale-105 transition duration-500">
+
+                    <div class="absolute inset-0 bg-gradient-to-t
+                            from-black/80 to-transparent">
+                    </div>
+
+                    <div class="absolute bottom-5 left-4 text-white">
+                        <h3 class="font-bold">Wall Art & Decor</h3>
+                        <p class="text-xs text-stone-300">Room Decor</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- SUGGEST A COLLECTION -->
+    <section class="bg-neutral-950 w-full py-20 mt-10">
+
+        <div class="text-center max-w-2xl mx-auto px-5">
+
+            <!-- Small heading -->
+            <p class="text-rose-800 text-sm font-bold tracking-[0.2em] mb-4">
+                CAN'T FIND WHAT YOU LOVE?
+            </p>
+
+            <!-- Main heading -->
+            <h2 class="text-white text-4xl md:text-5xl font-black leading-tight">
+                SUGGEST A
+                <br>
+                COLLECTION
+            </h2>
+
+            <!-- Description -->
+            <p class="text-stone-400 text-sm md:text-base mt-5">
+                Help us bring your fandom to life.
+            </p>
+
+            <!-- Button -->
+            <a href="suggest.html" class="inline-block mt-7 bg-red-800
+                  text-neutral-900 font-bold text-sm
+                  px-8 py-4 rounded-md
+                  hover:bg-rose-700
+                  transition duration-300">
+                SUGGEST NOW ›
+            </a>
+
+        </div>
+
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JJK| Anime Store</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+
+<body class="bg-neutral-950 text-white">
+
+
+    <!-- NAVBAR -->
+
+    <nav class="bg-gradient-to-r from-neutral-950 via-red-950 to-neutral-950
+                h-28 flex items-center px-8">
+
+        <!-- LOGO -->
+
+        <div class="flex items-center gap-3">
+
+            <i class="fa fa-superpowers text-rose-700 text-3xl"></i>
+
+            <span class="text-xl font-bold tracking-wide">
+                ANIME STORE
+            </span>
+
+        </div>
+
+
+        <!-- NAVIGATION -->
+
+        <div class="ml-auto flex items-center">
+
+            <a href="index.html" class="text-stone-200 mx-4 text-lg font-semibold hover:text-rose-700">
+                Home
+            </a>
+
+            <a href="shop.html" class="text-stone-200 mx-4 text-lg font-semibold hover:text-rose-700">
+                Shop
+            </a>
+
+            <!-- SHOP BY ANIME -->
+
+            <div class="relative mx-4 group">
+
+                <button class="text-stone-200 text-lg font-semibold
+               hover:text-rose-700">
+
+                    Shop by Anime
+                    <i class="fa fa-angle-down ml-1"></i>
+
+                </button>
+
+
+                <!-- Dropdown -->
+
+                <div class="absolute left-0 top-full pt-3
+               hidden group-hover:block z-50">
+
+                    <div class="bg-neutral-900 border border-stone-700
+                   rounded-lg w-52 shadow-xl overflow-hidden">
+
+                        <a href="onepiece.html" class="block px-5 py-3 text-stone-200
+                       hover:bg-red-950 hover:text-rose-700">
+                            One Piece
+                        </a>
+
+                        <a href="dragonball.html" class="block px-5 py-3 text-stone-200
+                       hover:bg-red-950 hover:text-rose-700">
+                            Dragon Ball Z
+                        </a>
+
+                        <a href="demonslayer.html" class="block px-5 py-3 text-stone-200
+                       hover:bg-red-950 hover:text-rose-700">
+                            Demon Slayer
+                        </a>
+
+                        <a href="naruto.html" class="block px-5 py-3 text-stone-200
+                       hover:bg-red-950 hover:text-rose-700">
+                            Naruto
+                        </a>
+
+                        <a href="jujutsukaisen.html" class="block px-5 py-3 text-stone-200
+                       hover:bg-red-950 hover:text-rose-700">
+                            Jujutsu Kaisen
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SEARCH -->
+
+            <div class="ml-4 text-stone-200 border-2 border-stone-500
+                       rounded-xl h-10 px-3 flex items-center">
+
+                <input type="text" placeholder="search..." class="placeholder:text-stone-400 font-semibold
+                           outline-none bg-transparent w-40">
+
+                <i class="fa fa-search ml-2"></i>
+
+            </div>
+
+
+            <!-- ICONS -->
+
+            <div class="flex items-center ml-4 h-10">
+
+                <a href="wishlist.html" class="text-stone-200 mx-2 text-xl
+                           flex items-center justify-center
+                           hover:text-rose-700">
+
+                    <i class="fa fa-heart-o"></i>
+
+                </a>
+
+
+                <a href="cart.html" class="text-stone-200 mx-2 text-xl
+                           flex items-center justify-center
+                           hover:text-rose-700">
+
+                    <i class="fa fa-shopping-cart"></i>
+
+                </a>
+
+
+                <a href="login.html" class="text-stone-200 mx-2 text-xl
+                           flex items-center justify-center
+                           hover:text-rose-700">
+
+                    <i class="fa fa-user"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- ONE PIECE HERO -->
+
+    <section class="relative min-h-[500px] flex items-center
+               overflow-hidden bg-gradient-to-r
+               from-black via-red-950 to-neutral-950">
+
+
+        <!-- Background Image -->
+
+        <img src="jjk.png" alt="One Piece" class="absolute inset-0 w-full h-full object-cover opacity-40">
+
+
+        <!-- Dark Overlay -->
+
+        <div class="absolute inset-0 bg-black/50"></div>
+
+
+        <!-- Hero Content -->
+
+        <div class="relative z-10 max-w-7xl mx-auto
+                    w-full px-10 py-20">
+
+            <p class="text-red-800 font-bold tracking-[0.3em] text-sm">
+                ANIME COLLECTION
+            </p>
+
+
+            <h1 class="text-6xl md:text-7xl font-black mt-4">
+                JUJUTSU KAISEN
+            </h1>
+
+
+            <p class="text-stone-300 max-w-xl mt-5 text-lg leading-relaxed">
+
+                Power up with the legendary Curses of Jujutsu Kaisen  and explore our
+                collection of figures, collectibles, apparel and more.
+            </p>
+
+
+            <a href="#products" class="inline-block mt-7
+           bg-rose-700/20
+           text-rose-300
+           border border-rose-700
+           font-semibold
+           px-8 py-3
+           rounded-md
+           hover:bg-red-900
+           hover:text-white
+           transition duration-300">
+
+                SHOP JJK
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- CATEGORY FILTER -->
+
+    <section class="bg-neutral-900 py-8">
+
+        <div class="max-w-7xl mx-auto px-8">
+
+            <div class="flex flex-wrap gap-3">
+
+                <button class="bg-red-800 text-black px-6 py-2
+                           rounded-full font-semibold">
+
+                    All
+
+                </button>
+
+                <button class="border border-stone-600
+                           px-6 py-2 rounded-full
+                           hover:border-rose-700
+                           hover:text-rose-700">
+
+                    Figures
+
+                </button>
+
+                <button class="border border-stone-600
+                           px-6 py-2 rounded-full
+                           hover:border-rose-700
+                           hover:text-rose-700">
+
+                    Keychains
+
+                </button>
+
+                <button class="border border-stone-600
+                           px-6 py-2 rounded-full
+                           hover:border-rose-700
+                           hover:text-rose-700">
+
+                    Wall Art
+
+                </button>
+
+                <button class="border border-stone-600
+                           px-6 py-2 rounded-full
+                           hover:border-rose-700
+                           hover:text-rose-700">
+                    Swords
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- PRODUCTS -->
+
+    <section id="products" class="bg-neutral-950 py-16">
+
+        <div class="max-w-7xl mx-auto px-8">
+
+
+            <!-- Heading -->
+
+            <div class="flex items-end justify-between mb-10">
+
+                <div>
+
+                    <p class="text-rose-700 text-sm
+                              font-bold tracking-[0.2em]">
+                        JJK COLLECTION
+
+                    </p>
+
+                    <h2 class="text-4xl font-black mt-2">
+                JJK
+                        MERCHANDISE
+                    </h2>
+
+                </div>
+
+
+                <p class="text-stone-500">
+                    9 Products
+                </p>
+
+            </div>
+
+
+
+            <!-- PRODUCT GRID -->
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+
+
+                <!-- PRODUCT 1 -->
+
+                <div class="bg-neutral-900 rounded-xl overflow-hidden
+                           border border-neutral-800
+                           hover:border-rose-700
+                           transition group">
+
+                    <div class="h-72 bg-white overflow-hidden">
+
+                        <img src="jjk_products/p1.png" alt="Luffy Figure" class="w-full h-full object-cover
+                                   group-hover:scale-105 transition">
+
+                    </div>
+
+
+                    <div class="p-5">
+
+                        <p class="text-rose-700 text-xs font-semibold">
+                            FIGURE
+                        </p>
+
+                        <h3 class="font-bold text-lg mt-1">
+                            CHOSO
+                        </h3>
+
+                        <p class="text-stone-400 mt-2">
+                            ₹1,499
+                        </p>
+
+                        <button class="w-full bg-red-900 text-black
+                                   font-bold py-2 rounded-lg mt-4
+                                   hover:bg-rose-700">
+
+                            ADD TO CART
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PRODUCT 2 -->
+
+                <div class="bg-neutral-900 rounded-xl overflow-hidden
+                           border border-neutral-800
+                           hover:border-rose-700 transition group">
+
+                    <div class="h-72 bg-white overflow-hidden">
+
+                        <img src="jjk_products/p2.png" alt="Zoro Sword" class="w-full h-full object-cover
+                                   group-hover:scale-105 transition">
+
+                    </div>
+
+
+                    <div class="p-5">
+
+                        <p class="text-rose-700 text-xs font-semibold">
+                            FIGURE
+                        </p>
+
+                        <h3 class="font-bold text-lg mt-1">
+                            GOJO
+                        </h3>
+
+                        <p class="text-stone-400 mt-2">
+                            ₹1,499
+                        </p>
+
+                        <button class="w-full bg-red-900 text-black
+                                   font-bold py-2 rounded-lg mt-4
+                                   hover:bg-rose-700">
+
+                            ADD TO CART
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PRODUCT 3 -->
+
+                <div class="bg-neutral-900 rounded-xl overflow-hidden
+                           border border-neutral-800
+                           hover:border-rose-700 transition group">
+
+                    <div class="h-72 bg-white overflow-hidden">
+
+                        <img src="jjk_products/p3.png" alt="One Piece Keychain" class="w-1500 h-90 object-cover
+                                   group-hover:scale-105 transition">
+
+                    </div>
+
+
+                    <div class="p-5">
+
+                        <p class="text-rose-700 text-xs font-semibold">
+                           FIGURE
+                        </p>
+
+                        <h3 class="font-bold text-lg mt-1">
+                            Suguru
+                        </h3>
+
+                        <p class="text-stone-400 mt-2">
+                            ₹1099
+                        </p>
+
+                        <button class="w-full bg-red-900 text-black
+                                   font-bold py-2 rounded-lg mt-4
+                                   hover:bg-rose-700">
+
+                            ADD TO CART
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PRODUCT 4 -->
+
+                <div class="bg-neutral-900 rounded-xl overflow-hidden
+                           border border-neutral-800
+                           hover:border-rose-700 transition group">
+
+                    <div class="h-72 bg-white overflow-hidden">
+
+                        <img src="jjk_products/p4.png" alt="Luffy Hoodie" class="w-full h-full object-contain
+                                   group-hover:scale-105 transition">
+
+                    </div>
+
+
+                    <div class="p-5">
+
+                        <p class="text-rose-700 text-xs font-semibold">
+                            MINATURES
+                        </p>
+
+                        <h3 class="font-bold text-lg mt-1">
+                            JJK SQUAD
+                        </h3>
+
+                        <p class="text-stone-400 mt-2">
+                            ₹1,000
+                        </p>
+
+                        <button class="w-full bg-red-900 text-black
+                                   font-bold py-2 rounded-lg mt-4
+                                   hover:bg-rose-700">
+
+                            ADD TO CART
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- PRODUCT 5 -->
+
+                <div class="bg-neutral-900 rounded-xl overflow-hidden
+                           border border-neutral-800
+                           hover:border-rose-700 transition group">
+
+                    <div class="h-72 bg-white overflow-hidden">
+
+                        <img src="jjk_products/p5.png" alt="One Piece Keychain" class="w-full h-full object-cover
+                                   group-hover:scale-105 transition">
+
+                    </div>
+
+
+                    <div class="p-5">
+
+                        <p class="text-rose-700 text-xs font-semibold">
+                            FIGURE
+                        </p>
+
+                        <h3 class="font-bold text-lg mt-1">
+                           SUKUNA
+                        </h3>
+
+                        <p class="text-stone-400 mt-2">
+                            ₹1199
+                        </p>
+
+                        <button class="w-full bg-red-900 text-black
+                                   font-bold py-2 rounded-lg mt-4
+                                   hover:bg-rose-700">
+
+                            ADD TO CART
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- PRODUCT 6 -->
+
+                <div class="bg-neutral-900 rounded-xl overflow-hidden
+                           border border-neutral-800
+                           hover:border-rose-700 transition group">
+
+                    <div class="h-72 bg-white overflow-hidden">
+
+                        <img src="jjk_products/p6.png" alt="One Piece Keychain" class="w-full h-full object-cover
+                                   group-hover:scale-105 transition">
+
+                    </div>
+
+
+                    <div class="p-5">
+
+                        <p class="text-rose-700 text-xs font-semibold">
+                            MINATURE
+                        </p>
+
+                        <h3 class="font-bold text-lg mt-1">
+                            GOJO & SUGURU
+                        </h3>
+
+                        <p class="text-stone-400 mt-2">
+                            ₹699
+                        </p>
+
+                        <button class="w-full bg-red-900 text-black
+                                   font-bold py-2 rounded-lg mt-4
+                                   hover:bg-rose-700">
+
+                            ADD TO CART
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- PRODUCT 7 -->
+
+                <div class="bg-neutral-900 rounded-xl overflow-hidden
+                           border border-neutral-800
+                           hover:border-rose-700 transition group">
+
+                    <div class="h-72 bg-white overflow-hidden">
+
+                        <img src="jjk_products/p7.png" alt="One Piece Keychain" class="w-full h-full object-cover
+                                   group-hover:scale-105 transition">
+
+                    </div>
+
+
+                    <div class="p-5">
+
+                        <p class="text-rose-700 text-xs font-semibold">
+                            POSTERS
+                        </p>
+
+                        <h3 class="font-bold text-lg mt-1">
+                            JJK WALL POSTER
+                        </h3>
+
+                        <p class="text-stone-400 mt-2">
+                            ₹599
+                        </p>
+
+                        <button class="w-full bg-red-900 text-black
+                                   font-bold py-2 rounded-lg mt-4
+                                   hover:bg-rose-700">
+
+                            ADD TO CART
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- PRODUCT 8 -->
+
+                <div class="bg-neutral-900 rounded-xl overflow-hidden
+                           border border-neutral-800
+                           hover:border-rose-700 transition group">
+
+                    <div class="h-72 bg-white overflow-hidden">
+
+                        <img src="jjk_products/p8.png" alt="One Piece Keychain" class="w-full h-full object-contain
+                                   group.png-hover:scale-105 transition">
+
+                    </div>
+
+
+                    <div class="p-5">
+
+                        <p class="text-rose-700 text-xs font-semibold">
+                            KEYCHAIN
+                        </p>
+
+                        <h3 class="font-bold text-lg mt-1">
+                            TOJI KNIFE
+                        </h3>
+
+                        <p class="text-stone-400 mt-2">
+                            ₹399
+                        </p>
+
+                        <button class="w-full bg-red-900 text-black
+                                   font-bold py-2 rounded-lg mt-4
+                                   hover:bg-rose-700">
+
+                            ADD TO CART
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- PRODUCT 9 -->
+
+                <div class="bg-neutral-900 rounded-xl overflow-hidden
+                           border border-neutral-800
+                           hover:border-rose-700 transition group">
+
+                    <div class="h-72 bg-white overflow-hidden">
+
+                        <img src="jjk_products/p9.png" alt="One Piece Keychain" class="w-full h-full object-contain
+                                   group-hover:scale-105 transition">
+
+                    </div>
+
+
+                    <div class="p-5">
+
+                        <p class="text-rose-700 text-xs font-semibold">
+                            KEYCHAIN
+                        </p>
+
+                        <h3 class="font-bold text-lg mt-1">
+                           JJK Keychain
+                        </h3>
+
+                        <p class="text-stone-400 mt-2">
+                            ₹399
+                        </p>
+
+                        <button class="w-full bg-red-900 text-black
+                                   font-bold py-2 rounded-lg mt-4
+                                   hover:bg-rose-700">
+
+                            ADD TO CART
+
+                        </button>
+
+                    </div>
+
+                </div>
+                
+
+            </div>
+
+        </div>
+
+    </section>
+
+<!-- FEATURED CHARACTERS -->
+<section class="bg-white text-neutral-900 py-16">
+
+    <div class="max-w-7xl mx-auto px-8 text-center">
+
+        <!-- Heading -->
+
+        <p class="text-rose-700 text-sm font-bold tracking-[0.2em]">
+            CURSED SORCERERS
+        </p>
+
+        <h2 class="text-4xl font-black mt-2">
+            SHOP BY CHARACTER
+        </h2>
+
+        <p class="text-stone-500 mt-3">
+            Find your favorite Jujutsu Kaisen character and explore exclusive merchandise.
+        </p>
+
+
+        <!-- Characters -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-x-6 gap-y-10 mt-12">
+
+
+            <!-- GOJO -->
+
+            <a href="#" class="group">
+
+                <div class="w-28 h-28 mx-auto rounded-full overflow-hidden
+                        border-4 border-rose-700
+                        group-hover:scale-105 transition duration-300">
+
+                    <img src="jjk_products/gojo.png" alt="Gojo Satoru"
+                        class="w-full h-full object-cover">
+
+                </div>
+
+                <h3 class="font-bold text-lg mt-3">
+                    Gojo
+                </h3>
+
+                <p class="text-stone-500 text-xs uppercase tracking-widest">
+                    Strongest Sorcerer
+                </p>
+
+            </a>
+
+
+            <!-- MEGUMI -->
+
+            <a href="#" class="group">
+
+                <div class="w-28 h-28 mx-auto rounded-full overflow-hidden
+                        border-4 border-rose-700
+                        group-hover:scale-105 transition duration-300">
+
+                    <img src="jjk_products/megumi.png" alt="Megumi Fushiguro"
+                        class="w-full h-full object-cover">
+
+                </div>
+
+                <h3 class="font-bold text-lg mt-3">
+                    Megumi
+                </h3>
+
+                <p class="text-stone-500 text-xs uppercase tracking-widest">
+                    Ten Shadows
+                </p>
+
+            </a>
+
+
+            <!-- SUKUNA -->
+
+            <a href="#" class="group">
+
+                <div class="w-28 h-28 mx-auto rounded-full overflow-hidden
+                        border-4 border-rose-700
+                        group-hover:scale-105 transition duration-300">
+
+                    <img src="jjk_products/sakuna.png" alt="Ryomen Sukuna"
+                        class="w-full h-full object-cover">
+
+                </div>
+
+                <h3 class="font-bold text-lg mt-3">
+                    Sukuna
+                </h3>
+
+                <p class="text-stone-500 text-xs uppercase tracking-widest">
+                    King of Curses
+                </p>
+
+            </a>
+
+
+            <!-- TOJI -->
+
+            <a href="#" class="group">
+
+                <div class="w-28 h-28 mx-auto rounded-full overflow-hidden
+                        border-4 border-rose-700
+                        group-hover:scale-105 transition duration-300">
+
+                    <img src="jjk_products/toji.png" alt="Toji Fushiguro"
+                        class="w-full h-full object-cover">
+
+                </div>
+
+                <h3 class="font-bold text-lg mt-3">
+                    Toji
+                </h3>
+
+                <p class="text-stone-500 text-xs uppercase tracking-widest">
+                    Sorcerer Killer
+                </p>
+
+            </a>
+
+
+            <!-- YUJI -->
+
+            <a href="#" class="group">
+
+                <div class="w-28 h-28 mx-auto rounded-full overflow-hidden
+                        border-4 border-rose-700
+                        group-hover:scale-105 transition duration-300">
+
+                    <img src="jjk_products/yuji.png" alt="Yuji Itadori"
+                        class="w-full h-full object-cover">
+
+                </div>
+
+                <h3 class="font-bold text-lg mt-3">
+                    Yuji
+                </h3>
+
+                <p class="text-stone-500 text-xs uppercase tracking-widest">
+                    Jujutsu Sorcerer
+                </p>
+
+            </a>
+
+
+            <!-- YUTA -->
+
+            <a href="#" class="group">
+
+                <div class="w-28 h-28 mx-auto rounded-full overflow-hidden
+                        border-4 border-rose-700
+                        group-hover:scale-105 transition duration-300">
+
+                    <img src="jjk_products/yuta.png" alt="Yuta Okkotsu"
+                        class="w-full h-full object-cover">
+
+                </div>
+
+                <h3 class="font-bold text-lg mt-3">
+                    Yuta
+                </h3>
+
+                <p class="text-stone-500 text-xs uppercase tracking-widest">
+                    Special Grade
+                </p>
+
+            </a>
+
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- FOOTER -->
+
+    <footer class="bg-black text-stone-400 py-8 text-center">
+
+        <p>
+            © 2026 Anime Store. All rights reserved.
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
