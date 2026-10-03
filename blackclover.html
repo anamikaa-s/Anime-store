@@ -6,14 +6,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Dragon ball | Anime Store</title>
+    <title>Black Clover | Anime Store</title>
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* RESPONSIVE NAVBAR */
 
+        @media (max-width: 900px) {
+
+            .navbar {
+                height: auto;
+                min-height: 100px;
+                flex-wrap: wrap;
+                padding: 10px 15px;
+            }
+
+            .navbar>div:first-child {
+                margin-bottom: 5px;
+            }
+
+            .navbar>div:first-child i {
+                font-size: 28px;
+            }
+
+            .navbar>div:first-child span {
+                font-size: 18px;
+            }
+
+            .nav-links {
+                width: 100%;
+                justify-content: center;
+                order: 3;
+                margin-top: 10px;
+                flex-wrap: wrap;
+            }
+
+            .nav-links>a,
+            .nav-links>div {
+                margin-left: 8px;
+                margin-right: 8px;
+            }
+
+            .nav-links a,
+            .nav-links button {
+                font-size: 15px;
+            }
+
+            .navbar input {
+                width: 100px;
+            }
+        }
+
+
+        @media (max-width: 600px) {
+
+            .navbar {
+                padding: 10px;
+            }
+
+            .navbar>div:first-child {
+                gap: 8px;
+            }
+
+            .navbar>div:first-child i {
+                font-size: 24px;
+            }
+
+            .navbar>div:first-child span {
+                font-size: 16px;
+            }
+
+            .nav-links {
+                gap: 5px;
+            }
+
+            .nav-links>a,
+            .nav-links>div {
+                margin-left: 4px;
+                margin-right: 4px;
+            }
+
+            .nav-links a,
+            .nav-links button {
+                font-size: 13px;
+            }
+
+            .navbar input {
+                width: 80px;
+            }
+
+            .nav-links>div:last-child a {
+                margin-left: 3px;
+                margin-right: 3px;
+            }
+        }
+
+
+        @media (max-width: 400px) {
+
+            .navbar>div:first-child span {
+                display: none;
+            }
+
+            .nav-links {
+                justify-content: space-between;
+            }
+
+            .nav-links a,
+            .nav-links button {
+                font-size: 12px;
+            }
+
+            .navbar input {
+                width: 60px;
+            }
+        }
+    </style>
 </head>
 
 
@@ -22,8 +134,8 @@
 
     <!-- NAVBAR -->
 
-    <nav class="bg-gradient-to-r from-neutral-950 via-red-950 to-neutral-950
-                h-28 flex items-center px-8">
+    <nav class="navbar bg-gradient-to-r from-neutral-950 via-red-950 to-neutral-950
+            h-28 flex items-center px-8">
 
         <!-- LOGO -->
 
@@ -40,7 +152,7 @@
 
         <!-- NAVIGATION -->
 
-        <div class="ml-auto flex items-center">
+        <div class="nav-links ml-auto flex items-center">
 
             <a href="index.html" class="text-stone-200 mx-4 text-lg font-semibold hover:text-rose-700">
                 Home
@@ -96,7 +208,7 @@
                             Jujutsu Kaisen
                         </a>
 
-                    </div>   
+                    </div>
 
                 </div>
 
@@ -154,46 +266,48 @@
 
 
 
-    <!-- ONE PIECE HERO -->
+  <!-- BLACK CLOVER HERO -->
 
-    <section class="relative min-h-[500px] flex items-center
+<section class="relative min-h-[500px] flex items-center
                overflow-hidden bg-gradient-to-r
                from-black via-red-950 to-neutral-950">
 
+    <!-- Background Image -->
 
-        <!-- Background Image -->
-
-        <img src="dragon ball z.png" alt="One Piece" class="absolute inset-0 w-full h-full object-cover opacity-40">
-
-
-        <!-- Dark Overlay -->
-
-        <div class="absolute inset-0 bg-black/50"></div>
+    <img src="blck clover.png"
+         alt="Black Clover"
+         class="absolute inset-0 w-full h-full object-cover opacity-40">
 
 
-        <!-- Hero Content -->
+    <!-- Dark Overlay -->
 
-        <div class="relative z-10 max-w-7xl mx-auto
-                    w-full px-10 py-20">
-
-            <p class="text-red-800 font-bold tracking-[0.3em] text-sm">
-                ANIME COLLECTION
-            </p>
+    <div class="absolute inset-0 bg-black/50"></div>
 
 
-            <h1 class="text-6xl md:text-7xl font-black mt-4">
-                DRAGON BALL Z
-            </h1>
+    <!-- Hero Content -->
+
+    <div class="relative z-10 max-w-7xl mx-auto
+                w-full px-10 py-20">
+
+        <p class="text-red-800 font-bold tracking-[0.3em] text-sm">
+            ANIME COLLECTION
+        </p>
 
 
-            <p class="text-stone-300 max-w-xl mt-5 text-lg leading-relaxed">
-
-                Power up with the legendary warriors of Dragon Ball and explore our
-                collection of figures, collectibles, apparel and more.
-            </p>
+        <h1 class="text-6xl md:text-7xl font-black mt-4">
+            BLACK CLOVER
+        </h1>
 
 
-            <a href="#products" class="inline-block mt-7
+        <p class="text-stone-300 max-w-xl mt-5 text-lg leading-relaxed">
+
+            Enter the world of magic and explore our
+            collection of figures, collectibles, apparel and more.
+
+        </p>
+
+
+        <a href="#products" class="inline-block mt-7
            bg-rose-700/20
            text-rose-300
            border border-rose-700
@@ -204,13 +318,13 @@
            hover:text-white
            transition duration-300">
 
-                SHOP DRAGON BALL
+            SHOP BLACK CLOVER
 
-            </a>
+        </a>
 
-        </div>
+    </div>
 
-    </section>
+</section>
 
 
 
@@ -272,891 +386,457 @@
 
 
 
-    <!-- PRODUCTS -->
+   <!-- PRODUCTS -->
 
-    <section id="products" class="bg-neutral-950 py-16">
+<section id="products" class="bg-neutral-950 py-16">
 
-        <div class="max-w-7xl mx-auto px-8">
+    <div class="max-w-7xl mx-auto px-8">
 
+        <!-- Heading -->
 
-            <!-- Heading -->
+        <div class="flex items-end justify-between mb-10">
 
-            <div class="flex items-end justify-between mb-10">
+            <div>
 
-                <div>
-
-                    <p class="text-rose-700 text-sm
-                              font-bold tracking-[0.2em]">
-                        DRAGON BALL COLLECTION
-
-                    </p>
-
-                    <h2 class="text-4xl font-black mt-2">
-                        DRAGON BALL
-                        MERCHANDISE
-                    </h2>
-
-                </div>
-
-
-                <p class="text-stone-500">
-                    12 Products
+                <p class="text-rose-700 text-sm
+                          font-bold tracking-[0.2em]">
+                    BLACK CLOVER COLLECTION
                 </p>
 
+                <h2 class="text-4xl font-black mt-2">
+                    BLACK CLOVER
+                    MERCHANDISE
+                </h2>
+
             </div>
 
-
-
-            <!-- PRODUCT GRID -->
-
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-
-
-
-                <!-- PRODUCT 1 -->
-
-                <div class="bg-neutral-900 rounded-xl overflow-hidden
-                           border border-neutral-800
-                           hover:border-rose-700
-                           transition group">
-
-                    <div class="h-72 bg-white overflow-hidden">
-
-                        <img src="onepiece_products/P1 luffy.png" alt="Luffy Figure" class="w-full h-full object-cover
-                                   group-hover:scale-105 transition">
-
-                    </div>
-
-
-                    <div class="p-5">
-
-                        <p class="text-rose-700 text-xs font-semibold">
-                            FIGURE
-                        </p>
-
-                        <h3 class="font-bold text-lg mt-1">
-                            Monkey D. Luffy Figure
-                        </h3>
-
-                        <p class="text-stone-400 mt-2">
-                            ₹1,499
-                        </p>
-
-                        <button class="w-full bg-red-900 text-black
-                                   font-bold py-2 rounded-lg mt-4
-                                   hover:bg-rose-700">
-
-                            ADD TO CART
-
-                        </button>
-
-                    </div>
-
-                </div>
-
-
-
-                <!-- PRODUCT 2 -->
-
-                <div class="bg-neutral-900 rounded-xl overflow-hidden
-                           border border-neutral-800
-                           hover:border-rose-700 transition group">
-
-                    <div class="h-72 bg-white overflow-hidden">
-
-                        <img src="onepiece_products/P2 zoro.png" alt="Zoro Sword" class="w-full h-full object-cover
-                                   group-hover:scale-105 transition">
-
-                    </div>
-
-
-                    <div class="p-5">
-
-                        <p class="text-rose-700 text-xs font-semibold">
-                            SWORD
-                        </p>
-
-                        <h3 class="font-bold text-lg mt-1">
-                            Zoro Enma Replica
-                        </h3>
-
-                        <p class="text-stone-400 mt-2">
-                            ₹2,499
-                        </p>
-
-                        <button class="w-full bg-red-900 text-black
-                                   font-bold py-2 rounded-lg mt-4
-                                   hover:bg-rose-700">
-
-                            ADD TO CART
-
-                        </button>
-
-                    </div>
-
-                </div>
-
-
-
-                <!-- PRODUCT 3 -->
-
-                <div class="bg-neutral-900 rounded-xl overflow-hidden
-                           border border-neutral-800
-                           hover:border-rose-700 transition group">
-
-                    <div class="h-72 bg-white overflow-hidden">
-
-                        <img src="onepiece_products/P3 keychain.png" alt="One Piece Keychain" class="w-1500 h-90 object-contain
-                                   group-hover:scale-105 transition">
-
-                    </div>
-
-
-                    <div class="p-5">
-
-                        <p class="text-rose-700 text-xs font-semibold">
-                            KEYCHAIN
-                        </p>
-
-                        <h3 class="font-bold text-lg mt-1">
-                            Straw Hat Keychain
-                        </h3>
-
-                        <p class="text-stone-400 mt-2">
-                            ₹399
-                        </p>
-
-                        <button class="w-full bg-red-900 text-black
-                                   font-bold py-2 rounded-lg mt-4
-                                   hover:bg-rose-700">
-
-                            ADD TO CART
-
-                        </button>
-
-                    </div>
-
-                </div>
-
-
-
-                <!-- PRODUCT 4 -->
-
-                <div class="bg-neutral-900 rounded-xl overflow-hidden
-                           border border-neutral-800
-                           hover:border-rose-700 transition group">
-
-                    <div class="h-72 bg-white overflow-hidden">
-
-                        <img src="onepiece_products/P4 law.png" alt="Luffy Hoodie" class="w-full h-full object-contain
-                                   group-hover:scale-105 transition">
-
-                    </div>
-
-
-                    <div class="p-5">
-
-                        <p class="text-rose-700 text-xs font-semibold">
-                            APPAREL
-                        </p>
-
-                        <h3 class="font-bold text-lg mt-1">
-                            Luffy Graphic Hoodie
-                        </h3>
-
-                        <p class="text-stone-400 mt-2">
-                            ₹1,999
-                        </p>
-
-                        <button class="w-full bg-red-900 text-black
-                                   font-bold py-2 rounded-lg mt-4
-                                   hover:bg-rose-700">
-
-                            ADD TO CART
-
-                        </button>
-
-                    </div>
-
-                </div>
-
-                <!-- PRODUCT 5 -->
-
-                <div class="bg-neutral-900 rounded-xl overflow-hidden
-                           border border-neutral-800
-                           hover:border-rose-700 transition group">
-
-                    <div class="h-72 bg-white overflow-hidden">
-
-                        <img src="onepiece_products/P5 merry.png" alt="One Piece Keychain" class="w-full h-full object-contain
-                                   group-hover:scale-105 transition">
-
-                    </div>
-
-
-                    <div class="p-5">
-
-                        <p class="text-rose-700 text-xs font-semibold">
-                            KEYCHAIN
-                        </p>
-
-                        <h3 class="font-bold text-lg mt-1">
-                            Straw Hat Keychain
-                        </h3>
-
-                        <p class="text-stone-400 mt-2">
-                            ₹399
-                        </p>
-
-                        <button class="w-full bg-red-900 text-black
-                                   font-bold py-2 rounded-lg mt-4
-                                   hover:bg-rose-700">
-
-                            ADD TO CART
-
-                        </button>
-
-                    </div>
-
-                </div>
-
-                <!-- PRODUCT 6 -->
-
-                <div class="bg-neutral-900 rounded-xl overflow-hidden
-                           border border-neutral-800
-                           hover:border-rose-700 transition group">
-
-                    <div class="h-72 bg-white overflow-hidden">
-
-                        <img src="onepiece_products/P6 sunny.png" alt="One Piece Keychain" class="w-full h-full object-cover
-                                   group-hover:scale-105 transition">
-
-                    </div>
-
-
-                    <div class="p-5">
-
-                        <p class="text-rose-700 text-xs font-semibold">
-                            KEYCHAIN
-                        </p>
-
-                        <h3 class="font-bold text-lg mt-1">
-                            Straw Hat Keychain
-                        </h3>
-
-                        <p class="text-stone-400 mt-2">
-                            ₹399
-                        </p>
-
-                        <button class="w-full bg-red-900 text-black
-                                   font-bold py-2 rounded-lg mt-4
-                                   hover:bg-rose-700">
-
-                            ADD TO CART
-
-                        </button>
-
-                    </div>
-
-                </div>
-
-                <!-- PRODUCT 7 -->
-
-                <div class="bg-neutral-900 rounded-xl overflow-hidden
-                           border border-neutral-800
-                           hover:border-rose-700 transition group">
-
-                    <div class="h-72 bg-white overflow-hidden">
-
-                        <img src="onepiece_products/P7 crew.png" alt="One Piece Keychain" class="w-full h-full object-cover
-                                   group-hover:scale-105 transition">
-
-                    </div>
-
-
-                    <div class="p-5">
-
-                        <p class="text-rose-700 text-xs font-semibold">
-                            KEYCHAIN
-                        </p>
-
-                        <h3 class="font-bold text-lg mt-1">
-                            Straw Hat Keychain
-                        </h3>
-
-                        <p class="text-stone-400 mt-2">
-                            ₹399
-                        </p>
-
-                        <button class="w-full bg-red-900 text-black
-                                   font-bold py-2 rounded-lg mt-4
-                                   hover:bg-rose-700">
-
-                            ADD TO CART
-
-                        </button>
-
-                    </div>
-
-                </div>
-
-                <!-- PRODUCT 8 -->
-
-                <div class="bg-neutral-900 rounded-xl overflow-hidden
-                           border border-neutral-800
-                           hover:border-rose-700 transition group">
-
-                    <div class="h-72 bg-white overflow-hidden">
-
-                        <img src="onepiece_products/P8 hat.png" alt="One Piece Keychain" class="w-full h-full object-contain
-                                   group.png-hover:scale-105 transition">
-
-                    </div>
-
-
-                    <div class="p-5">
-
-                        <p class="text-rose-700 text-xs font-semibold">
-                            KEYCHAIN
-                        </p>
-
-                        <h3 class="font-bold text-lg mt-1">
-                            Straw Hat Keychain
-                        </h3>
-
-                        <p class="text-stone-400 mt-2">
-                            ₹399
-                        </p>
-
-                        <button class="w-full bg-red-900 text-black
-                                   font-bold py-2 rounded-lg mt-4
-                                   hover:bg-rose-700">
-
-                            ADD TO CART
-
-                        </button>
-
-                    </div>
-
-                </div>
-
-                <!-- PRODUCT 9 -->
-
-                <div class="bg-neutral-900 rounded-xl overflow-hidden
-                           border border-neutral-800
-                           hover:border-rose-700 transition group">
-
-                    <div class="h-72 bg-white overflow-hidden">
-
-                        <img src="onepiece_products/P9 cushion.png" alt="One Piece Keychain" class="w-full h-full object-contain
-                                   group-hover:scale-105 transition">
-
-                    </div>
-
-
-                    <div class="p-5">
-
-                        <p class="text-rose-700 text-xs font-semibold">
-                            KEYCHAIN
-                        </p>
-
-                        <h3 class="font-bold text-lg mt-1">
-                            Straw Hat Keychain
-                        </h3>
-
-                        <p class="text-stone-400 mt-2">
-                            ₹399
-                        </p>
-
-                        <button class="w-full bg-red-900 text-black
-                                   font-bold py-2 rounded-lg mt-4
-                                   hover:bg-rose-700">
-
-                            ADD TO CART
-
-                        </button>
-
-                    </div>
-
-                </div>
-                <!-- PRODUCT 10 -->
-
-                <div class="bg-neutral-900 rounded-xl overflow-hidden
-                           border border-neutral-800
-                           hover:border-rose-700 transition group">
-
-                    <div class="h-72 bg-white overflow-hidden">
-
-                        <img src="onepiece_products/P10 lamps.png" alt="One Piece Keychain" class="w-full h-full object-contain
-                                   group-hover:scale-105 transition">
-
-                    </div>
-
-
-                    <div class="p-5">
-
-                        <p class="text-rose-700 text-xs font-semibold">
-                            KEYCHAIN
-                        </p>
-
-                        <h3 class="font-bold text-lg mt-1">
-                            Straw Hat Keychain
-                        </h3>
-
-                        <p class="text-stone-400 mt-2">
-                            ₹399
-                        </p>
-
-                        <button class="w-full bg-red-900 text-black
-                                   font-bold py-2 rounded-lg mt-4
-                                   hover:bg-rose-700">
-
-                            ADD TO CART
-
-                        </button>
-
-                    </div>
-
-                </div>
-
-                <!-- PRODUCT 11 -->
-
-                <div class="bg-neutral-900 rounded-xl overflow-hidden
-                           border border-neutral-800
-                           hover:border-rose-700 transition group">
-
-                    <div class="h-72 bg-white overflow-hidden">
-
-                        <img src="onepiece_products/P11 shanks.png" alt="One Piece Keychain" class="w-full h-full object-contain
-                                   group-hover:scale-105 transition">
-
-                    </div>
-
-
-                    <div class="p-5">
-
-                        <p class="text-rose-700 text-xs font-semibold">
-                            KEYCHAIN
-                        </p>
-
-                        <h3 class="font-bold text-lg mt-1">
-                            Straw Hat Keychain
-                        </h3>
-
-                        <p class="text-stone-400 mt-2">
-                            ₹399
-                        </p>
-
-                        <button class="w-full bg-red-900 text-black
-                                   font-bold py-2 rounded-lg mt-4
-                                   hover:bg-rose-700">
-
-                            ADD TO CART
-
-                        </button>
-
-                    </div>
-
-                </div>
-
-                <!-- PRODUCT 12 -->
-
-                <div class="bg-neutral-900 rounded-xl overflow-hidden
-                           border border-neutral-800
-                           hover:border-rose-700 transition group">
-
-                    <div class="h-72 bg-white overflow-hidden">
-
-                        <img src="onepiece_products/P12 sanji.png" alt="Sanji" class="w-full h-99 object-cover
-            group-hover:scale-105 transition">
-                    </div>
-
-
-                    <div class="p-5">
-
-                        <p class="text-rose-700 text-xs font-semibold">
-                            KEYCHAIN
-                        </p>
-
-                        <h3 class="font-bold text-lg mt-1">
-                            Straw Hat Keychain
-                        </h3>
-
-                        <p class="text-stone-400 mt-2">
-                            ₹399
-                        </p>
-
-                        <button class="w-full bg-red-900 text-black
-                                   font-bold py-2 rounded-lg mt-4
-                                   hover:bg-rose-700">
-
-                            ADD TO CART
-
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
+            <p class="text-stone-500">
+                6 Products
+            </p>
 
         </div>
 
-    </section>
 
+        <!-- PRODUCT GRID -->
+
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+
+            <!-- PRODUCT 1 -->
+
+            <div class="bg-neutral-900 rounded-xl overflow-hidden
+                       border border-neutral-800
+                       hover:border-rose-700
+                       transition group">
+
+                <div class="h-72 bg-white overflow-hidden">
+
+                    <img src="black_clover/p1_asta.png"
+                         alt="Asta Figure"
+                         class="w-full h-full object-cover
+                                group-hover:scale-105 transition">
+
+                </div>
+
+                <div class="p-5">
+
+                    <p class="text-rose-700 text-xs font-semibold">
+                        FIGURE
+                    </p>
+
+                    <h3 class="font-bold text-lg mt-1">
+                        Asta Figure
+                    </h3>
+
+                    <p class="text-stone-400 mt-2">
+                        ₹1,499
+                    </p>
+
+                    <button class="w-full bg-red-900 text-black
+                                   font-bold py-2 rounded-lg mt-4
+                                   hover:bg-rose-700">
+
+                        ADD TO CART
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 2 -->
+
+            <div class="bg-neutral-900 rounded-xl overflow-hidden
+                       border border-neutral-800
+                       hover:border-rose-700 transition group">
+
+                <div class="h-72 bg-white overflow-hidden">
+
+                    <img src="black_clover/p2_yuno.png"
+                         alt="Yuno Figure"
+                         class="w-full h-full object-cover
+                                group-hover:scale-105 transition">
+
+                </div>
+
+                <div class="p-5">
+
+                    <p class="text-rose-700 text-xs font-semibold">
+                        FIGURE
+                    </p>
+
+                    <h3 class="font-bold text-lg mt-1">
+                        Yuno Figure
+                    </h3>
+
+                    <p class="text-stone-400 mt-2">
+                        ₹2,499
+                    </p>
+
+                    <button class="w-full bg-red-900 text-black
+                                   font-bold py-2 rounded-lg mt-4
+                                   hover:bg-rose-700">
+
+                        ADD TO CART
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 3 -->
+
+            <div class="bg-neutral-900 rounded-xl overflow-hidden
+                       border border-neutral-800
+                       hover:border-rose-700 transition group">
+
+                <div class="h-72 bg-white overflow-hidden">
+
+                    <img src="black_clover/p3_vanesa.png"
+                         alt="Vanessa Figure"
+                         class="w-full h-full object-contain
+                                group-hover:scale-105 transition">
+
+                </div>
+
+                <div class="p-5">
+
+                    <p class="text-rose-700 text-xs font-semibold">
+                        FIGURE
+                    </p>
+
+                    <h3 class="font-bold text-lg mt-1">
+                        Vanessa Figure
+                    </h3>
+
+                    <p class="text-stone-400 mt-2">
+                        ₹1,799
+                    </p>
+
+                    <button class="w-full bg-red-900 text-black
+                                   font-bold py-2 rounded-lg mt-4
+                                   hover:bg-rose-700">
+
+                        ADD TO CART
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 4 -->
+
+            <div class="bg-neutral-900 rounded-xl overflow-hidden
+                       border border-neutral-800
+                       hover:border-rose-700 transition group">
+
+                <div class="h-72 bg-white overflow-hidden">
+
+                    <img src="black_clover/p4_asta.png"
+                         alt="Asta Collectible"
+                         class="w-full h-full object-contain
+                                group-hover:scale-105 transition">
+
+                </div>
+
+                <div class="p-5">
+
+                    <p class="text-rose-700 text-xs font-semibold">
+                        COLLECTIBLE
+                    </p>
+
+                    <h3 class="font-bold text-lg mt-1">
+                        Asta Collectible
+                    </h3>
+
+                    <p class="text-stone-400 mt-2">
+                        ₹1,999
+                    </p>
+
+                    <button class="w-full bg-red-900 text-black
+                                   font-bold py-2 rounded-lg mt-4
+                                   hover:bg-rose-700">
+
+                        ADD TO CART
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 5 -->
+
+            <div class="bg-neutral-900 rounded-xl overflow-hidden
+                       border border-neutral-800
+                       hover:border-rose-700 transition group">
+
+                <div class="h-72 bg-white overflow-hidden">
+
+                    <img src="black_clover/p5_yami.png"
+                         alt="Yami Figure"
+                         class="w-full h-full object-contain
+                                group-hover:scale-105 transition">
+
+                </div>
+
+                <div class="p-5">
+
+                    <p class="text-rose-700 text-xs font-semibold">
+                        FIGURE
+                    </p>
+
+                    <h3 class="font-bold text-lg mt-1">
+                        Yami Figure
+                    </h3>
+
+                    <p class="text-stone-400 mt-2">
+                        ₹2,199
+                    </p>
+
+                    <button class="w-full bg-red-900 text-black
+                                   font-bold py-2 rounded-lg mt-4
+                                   hover:bg-rose-700">
+
+                        ADD TO CART
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 6 -->
+
+            <div class="bg-neutral-900 rounded-xl overflow-hidden
+                       border border-neutral-800
+                       hover:border-rose-700 transition group">
+
+                <div class="h-72 bg-white overflow-hidden">
+
+                    <img src="black_clover/p6_nero.png"
+                         alt="Nero Plush"
+                         class="w-full h-full object-cover
+                                group-hover:scale-105 transition">
+
+                </div>
+
+                <div class="p-5">
+
+                    <p class="text-rose-700 text-xs font-semibold">
+                        PLUSH
+                    </p>
+
+                    <h3 class="font-bold text-lg mt-1">
+                        Nero Plush
+                    </h3>
+
+                    <p class="text-stone-400 mt-2">
+                        ₹899
+                    </p>
+
+                    <button class="w-full bg-red-900 text-black
+                                   font-bold py-2 rounded-lg mt-4
+                                   hover:bg-rose-700">
+
+                        ADD TO CART
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
 
 
     <!-- FEATURED CHARACTERS -->
     <section class="bg-white text-neutral-900 py-16">
 
-        <div class="max-w-7xl mx-auto px-8 text-center">
+    <div class="max-w-7xl mx-auto px-8 text-center">
 
-            <!-- Heading -->
+        <!-- Heading -->
 
-            <p class="text-rose-700 text-sm font-bold tracking-[0.2em]">
-                THE STRAW HAT CREW
-            </p>
+        <p class="text-rose-700 text-sm font-bold tracking-[0.2em]">
+            THE BLACK BULLS
+        </p>
 
-            <h2 class="text-4xl font-black mt-2">
-                SHOP BY CHARACTER
-            </h2>
+        <h2 class="text-4xl font-black mt-2">
+            SHOP BY CHARACTER
+        </h2>
 
-            <p class="text-stone-500 mt-3">
-                Find your favorite character and explore exclusive merchandise.
-            </p>
+        <p class="text-stone-500 mt-3">
+            Find your favorite character and explore exclusive merchandise.
+        </p>
 
 
-            <!-- Characters -->
-            <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-x-6 gap-y-10 mt-12">
+        <!-- Characters -->
 
+        <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-x-6 gap-y-10 mt-12">
 
-                <!-- LUFFY -->
 
-                <a href="#" class="group">
+            <!-- ASTA -->
 
-                    <div class="w-28 h-28 mx-auto rounded-full overflow-hidden
-                            border-4 border-rose-700
-                            group-hover:scale-105 transition duration-300">
+            <a href="#" class="group">
 
-                        <img src="onepiece_characters/luffy.png" alt="Luffy" class="w-full h-full object-cover">
+                <div class="w-28 h-28 mx-auto rounded-full overflow-hidden
+                        border-4 border-rose-700
+                        group-hover:scale-105 transition duration-300">
 
-                    </div>
+                    <img src="black_clover/asta.png"
+                         alt="Asta"
+                         class="w-full h-full object-cover">
 
-                    <h3 class="font-bold text-lg mt-3">
-                        Luffy
-                    </h3>
+                </div>
 
-                    <p class="text-stone-500 text-xs uppercase tracking-widest">
-                        Captain
-                    </p>
+                <h3 class="font-bold text-lg mt-3">
+                    Asta
+                </h3>
 
-                </a>
+                <p class="text-stone-500 text-xs uppercase tracking-widest">
+                    Magic Knight
+                </p>
 
+            </a>
 
-                <!-- ZORO -->
 
-                <a href="#" class="group">
+            <!-- YUNO -->
 
-                    <div class="w-28 h-28 mx-auto rounded-full overflow-hidden
-                            border-4 border-rose-700
-                            group-hover:scale-105 transition duration-300">
+            <a href="#" class="group">
 
-                        <img src="onepiece_characters/zoro.png" alt="Zoro" class="w-full h-full object-cover">
+                <div class="w-28 h-28 mx-auto rounded-full overflow-hidden
+                        border-4 border-rose-700
+                        group-hover:scale-105 transition duration-300">
 
-                    </div>
+                    <img src="black_clover/yuno.png"
+                         alt="Yuno"
+                         class="w-full h-full object-cover">
 
-                    <h3 class="font-bold text-lg mt-3">
-                        Zoro
-                    </h3>
+                </div>
 
-                    <p class="text-stone-500 text-xs uppercase tracking-widest">
-                        Swordsman
-                    </p>
+                <h3 class="font-bold text-lg mt-3">
+                    Yuno
+                </h3>
 
-                </a>
+                <p class="text-stone-500 text-xs uppercase tracking-widest">
+                    Wind Magic
+                </p>
 
+            </a>
 
-                <!-- NAMI -->
 
-                <a href="#" class="group">
+            <!-- NOELLE -->
 
-                    <div class="w-28 h-28 mx-auto rounded-full overflow-hidden
-                            border-4 border-rose-700
-                            group-hover:scale-105 transition duration-300">
+            <a href="#" class="group">
 
-                        <img src="onepiece_characters/nami.png" alt="Nami" class="w-full h-full object-cover">
+                <div class="w-28 h-28 mx-auto rounded-full overflow-hidden
+                        border-4 border-rose-700
+                        group-hover:scale-105 transition duration-300">
 
-                    </div>
+                    <img src="black_clover/noelle.png"
+                         alt="Noelle"
+                         class="w-full h-full object-cover">
 
-                    <h3 class="font-bold text-lg mt-3">
-                        Nami
-                    </h3>
+                </div>
 
-                    <p class="text-stone-500 text-xs uppercase tracking-widest">
-                        Navigator
-                    </p>
+                <h3 class="font-bold text-lg mt-3">
+                    Noelle
+                </h3>
 
-                </a>
+                <p class="text-stone-500 text-xs uppercase tracking-widest">
+                    Water Magic
+                </p>
 
+            </a>
 
-                <!-- USOPP -->
 
-                <a href="#" class="group">
+            <!-- YAMI -->
 
-                    <div class="w-28 h-28 mx-auto rounded-full overflow-hidden
-                            border-4 border-rose-700
-                            group-hover:scale-105 transition duration-300">
+            <a href="#" class="group">
 
-                        <img src="onepiece_characters/usopp.png" alt="Usopp" class="w-full h-full object-cover">
+                <div class="w-28 h-28 mx-auto rounded-full overflow-hidden
+                        border-4 border-rose-700
+                        group-hover:scale-105 transition duration-300">
 
-                    </div>
+                    <img src="black_clover/yami.png"
+                         alt="Yami"
+                         class="w-full h-full object-cover">
 
-                    <h3 class="font-bold text-lg mt-3">
-                        Usopp
-                    </h3>
+                </div>
 
-                    <p class="text-stone-500 text-xs uppercase tracking-widest">
-                        Sniper
-                    </p>
+                <h3 class="font-bold text-lg mt-3">
+                    Yami
+                </h3>
 
-                </a>
+                <p class="text-stone-500 text-xs uppercase tracking-widest">
+                    Dark Magic
+                </p>
 
+            </a>
 
-                <!-- SANJI -->
 
-                <a href="#" class="group">
+            <!-- NERO -->
 
-                    <div class="w-28 h-28 mx-auto rounded-full overflow-hidden
-                            border-4 border-rose-700
-                            group-hover:scale-105 transition duration-300">
+            <a href="#" class="group">
 
-                        <img src="onepiece_characters/sanji.png" alt="Sanji" class="w-full h-full object-cover">
+                <div class="w-28 h-28 mx-auto rounded-full overflow-hidden
+                        border-4 border-rose-700
+                        group-hover:scale-105 transition duration-300">
 
-                    </div>
+                    <img src="black_clover/nero.png"
+                         alt="Nero"
+                         class="w-full h-full object-cover">
 
-                    <h3 class="font-bold text-lg mt-3">
-                        Sanji
-                    </h3>
+                </div>
 
-                    <p class="text-stone-500 text-xs uppercase tracking-widest">
-                        Cook
-                    </p>
+                <h3 class="font-bold text-lg mt-3">
+                    Nero
+                </h3>
 
-                </a>
+                <p class="text-stone-500 text-xs uppercase tracking-widest">
+                    Anti-Magic
+                </p>
 
+            </a>
 
-                <!-- CHOPPER -->
-
-                <a href="#" class="group">
-
-                    <div class="w-28 h-28 mx-auto rounded-full overflow-hidden
-                            border-4 border-rose-700
-                            group-hover:scale-105 transition duration-300">
-
-                        <img src="onepiece_characters/chopper.png" alt="Chopper" class="w-full h-full object-cover">
-
-                    </div>
-
-                    <h3 class="font-bold text-lg mt-3">
-                        Chopper
-                    </h3>
-
-                    <p class="text-stone-500 text-xs uppercase tracking-widest">
-                        Doctor
-                    </p>
-
-                </a>
-
-
-                <!-- ROBIN -->
-
-                <a href="#" class="group">
-
-                    <div class="w-28 h-28 mx-auto rounded-full overflow-hidden
-                            border-4 border-rose-700
-                            group-hover:scale-105 transition duration-300">
-
-                        <img src="onepiece_characters/robin.png" alt="Robin" class="w-full h-full object-cover">
-
-                    </div>
-
-                    <h3 class="font-bold text-lg mt-3">
-                        Robin
-                    </h3>
-
-                    <p class="text-stone-500 text-xs uppercase tracking-widest">
-                        Archaeologist
-                    </p>
-
-                </a>
-
-
-                <!-- FRANKY -->
-
-                <a href="#" class="group">
-
-                    <div class="w-28 h-28 mx-auto rounded-full overflow-hidden
-                            border-4 border-rose-700
-                            group-hover:scale-105 transition duration-300">
-
-                        <img src="onepiece_characters/franky.png" alt="Franky" class="w-full h-full object-cover">
-
-                    </div>
-
-                    <h3 class="font-bold text-lg mt-3">
-                        Franky
-                    </h3>
-
-                    <p class="text-stone-500 text-xs uppercase tracking-widest">
-                        Shipwright
-                    </p>
-
-                </a>
-
-
-                <!-- BROOK -->
-
-                <a href="#" class="group">
-
-                    <div class="w-28 h-28 mx-auto rounded-full overflow-hidden
-                            border-4 border-rose-700
-                            group-hover:scale-105 transition duration-300">
-
-                        <img src="onepiece_characters/brook.png" alt="Brook" class="w-full h-full object-cover">
-
-                    </div>
-
-                    <h3 class="font-bold text-lg mt-3">
-                        Brook
-                    </h3>
-
-                    <p class="text-stone-500 text-xs uppercase tracking-widest">
-                        Musician
-                    </p>
-
-                </a>
-
-
-                <!-- JINBE -->
-
-                <a href="#" class="group">
-
-                    <div class="w-28 h-28 mx-auto rounded-full overflow-hidden
-                            border-4 border-rose-700
-                            group-hover:scale-105 transition duration-300">
-
-                        <img src="onepiece_characters/jinbe.png" alt="Jinbe" class="w-full h-full object-cover">
-
-                    </div>
-
-                    <h3 class="font-bold text-lg mt-3">
-                        Jinbe
-                    </h3>
-
-                    <p class="text-stone-500 text-xs uppercase tracking-widest">
-                        Helmsman
-                    </p>
-
-                </a>
-
-
-                <!-- SHANKS -->
-
-                <a href="#" class="group">
-
-                    <div class="w-28 h-28 mx-auto rounded-full overflow-hidden
-                            border-4 border-rose-700
-                            group-hover:scale-105 transition duration-300">
-
-                        <img src="onepiece_characters/shanks.png" alt="Shanks" class="w-full h-full object-cover">
-
-                    </div>
-
-                    <h3 class="font-bold text-lg mt-3">
-                        Shanks
-                    </h3>
-
-                    <p class="text-stone-500 text-xs uppercase tracking-widest">
-                        Pirate
-                    </p>
-
-                </a>
-
-
-                <!-- ACE -->
-
-                <a href="#" class="group">
-
-                    <div class="w-28 h-28 mx-auto rounded-full overflow-hidden
-                            border-4 border-rose-700
-                            group-hover:scale-105 transition duration-300">
-
-                        <img src="onepiece_characters/ace.png" alt="Ace" class="w-full h-full object-cover">
-
-                    </div>
-
-                    <h3 class="font-bold text-lg mt-3">
-                        Ace
-                    </h3>
-
-                    <p class="text-stone-500 text-xs uppercase tracking-widest">
-                        Fire Fist
-                    </p>
-
-                </a>
-
-
-                <!-- SABO -->
-
-                <a href="#" class="group">
-
-                    <div class="w-28 h-28 mx-auto rounded-full overflow-hidden
-                            border-4 border-rose-700
-                            group-hover:scale-105 transition duration-300">
-
-                        <img src="onepiece_characters/sabo.png" alt="Sabo" class="w-full h-full object-cover">
-
-                    </div>
-
-                    <h3 class="font-bold text-lg mt-3">
-                        Sabo
-                    </h3>
-
-                    <p class="text-stone-500 text-xs uppercase tracking-widest">
-                        Revolutionary
-                    </p>
-
-                </a>
-
-
-                <!-- LAW -->
-
-                <a href="#" class="group">
-
-                    <div class="w-28 h-28 mx-auto rounded-full overflow-hidden
-                            border-4 border-rose-700 object-cover
-                            group-hover:scale-105 transition duration-300">
-
-                        <img src="onepiece_characters/law.png" alt="Law" class="w-full h-full object-cover">
-
-                    </div>
-
-                    <h3 class="font-bold text-lg mt-3">
-                        Law
-                    </h3>
-
-                    <p class="text-stone-500 text-xs uppercase tracking-widest">
-                        Surgeon
-                    </p>
-
-                </a>
-
-
-            </div>
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
 

@@ -14,39 +14,123 @@
     <!-- Font Awesome -->
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+
+    /* NAVBAR */
+
+    .navbar {
+        width: 100%;
+    }
+
+
+    /* TABLET */
+
+    @media (max-width: 900px) {
+
+        .navbar {
+            height: auto;
+            min-height: 80px;
+            padding: 15px 20px;
+        }
+
+        .logo-text {
+            font-size: 18px;
+        }
+
+        .nav-links a {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+    }
+
+
+    /* MOBILE */
+
+    @media (max-width: 600px) {
+
+        .navbar {
+            min-height: 70px;
+            padding: 12px 15px;
+        }
+
+        .navbar i {
+            font-size: 24px;
+        }
+
+        .logo-text {
+            font-size: 16px;
+        }
+
+        .nav-links a {
+            font-size: 14px;
+            margin-left: 6px;
+            margin-right: 6px;
+        }
+
+    }
+
+
+    /* SMALL MOBILE */
+
+    @media (max-width: 400px) {
+
+        .navbar {
+            padding: 10px;
+        }
+
+        .navbar i {
+            font-size: 21px;
+        }
+
+        .logo-text {
+            font-size: 14px;
+        }
+
+        .nav-links a {
+            font-size: 13px;
+            margin-left: 4px;
+            margin-right: 4px;
+        }
+
+    }
+
+</style>
 
 </head>
 
 <body class="bg-neutral-950 text-white">
 
-    <!-- Navbar -->
-    <nav class="bg-gradient-to-r from-neutral-950 via-red-950 to-neutral-950
-                h-24 flex items-center px-8">
+  <!-- Navbar -->
 
-        <!-- Logo -->
-        <div class="flex items-center gap-3">
+<nav class="navbar bg-gradient-to-r from-neutral-950 via-red-950 to-neutral-950
+            h-24 flex items-center px-8">
 
-            <i class="fa fa-superpowers text-rose-700 text-3xl"></i>
+    <!-- Logo -->
 
-            <span class="text-xl font-bold tracking-wide">
-                ANIME STORE
-            </span>
+    <div class="flex items-center gap-3">
 
-        </div>
+        <i class="fa fa-superpowers text-rose-700 text-3xl"></i>
 
-        <!-- Navigation -->
-        <div class="ml-auto flex items-center">
+        <span class="logo-text text-xl font-bold tracking-wide">
+            ANIME STORE
+        </span>
 
-            <a href="index.html"
-                class="mx-4 text-stone-200 font-semibold hover:text-rose-700">
-                Home
-            </a>
+    </div>
 
-            
 
-        </div>
+    <!-- Navigation -->
 
-    </nav>
+    <div class="nav-links ml-auto flex items-center">
+
+        <a href="index.html"
+            class="mx-4 text-stone-200 font-semibold hover:text-rose-700">
+            Home
+        </a>
+
+    </div>
+
+</nav>
 
 
     <!-- Main Section -->

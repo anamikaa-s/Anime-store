@@ -13,7 +13,120 @@
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <style>
 
+/* RESPONSIVE NAVBAR */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        height: auto;
+        min-height: 100px;
+        flex-wrap: wrap;
+        padding: 10px 15px;
+    }
+
+    .navbar > div:first-child {
+        margin-bottom: 5px;
+    }
+
+    .navbar > div:first-child i {
+        font-size: 28px;
+    }
+
+    .navbar > div:first-child span {
+        font-size: 18px;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        order: 3;
+        margin-top: 10px;
+        flex-wrap: wrap;
+    }
+
+    .nav-links > a,
+    .nav-links > div {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .nav-links a,
+    .nav-links button {
+        font-size: 15px;
+    }
+
+    .navbar input {
+        width: 100px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar > div:first-child {
+        gap: 8px;
+    }
+
+    .navbar > div:first-child i {
+        font-size: 24px;
+    }
+
+    .navbar > div:first-child span {
+        font-size: 16px;
+    }
+
+    .nav-links {
+        gap: 5px;
+    }
+
+    .nav-links > a,
+    .nav-links > div {
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+
+    .nav-links a,
+    .nav-links button {
+        font-size: 13px;
+    }
+
+    .navbar input {
+        width: 80px;
+    }
+
+    .nav-links > div:last-child a {
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+}
+
+
+@media (max-width: 400px) {
+
+    .navbar > div:first-child span {
+        display: none;
+    }
+
+    .nav-links {
+        justify-content: space-between;
+    }
+
+    .nav-links a,
+    .nav-links button {
+        font-size: 12px;
+    }
+
+    .navbar input {
+        width: 60px;
+    }
+}
+</style>
 </head>
 
 
@@ -22,8 +135,8 @@
 
     <!-- NAVBAR -->
 
-    <nav class="bg-gradient-to-r from-neutral-950 via-red-950 to-neutral-950
-                h-28 flex items-center px-8">
+    <nav class="navbar bg-gradient-to-r from-neutral-950 via-red-950 to-neutral-950
+            h-28 flex items-center px-8">
 
         <!-- LOGO -->
 
@@ -40,7 +153,7 @@
 
         <!-- NAVIGATION -->
 
-        <div class="ml-auto flex items-center">
+        <div class="nav-links ml-auto flex items-center">
 
             <a href="index.html" class="text-stone-200 mx-4 text-lg font-semibold hover:text-rose-700">
                 Home
@@ -188,7 +301,8 @@
 
             <p class="text-stone-300 max-w-xl mt-5 text-lg leading-relaxed">
 
-                Unleash the power of the Demon Slayer Corps and explore our collection of figures, collectibles, apparel and more.
+                Unleash the power of the Demon Slayer Corps and explore our collection of figures, collectibles, apparel
+                and more.
 
             </p>
 
@@ -419,7 +533,7 @@
                         </p>
 
                         <h3 class="font-bold text-lg mt-1">
-                            Akaza 
+                            Akaza
                         </h3>
 
                         <p class="text-stone-400 mt-2">
@@ -457,7 +571,7 @@
                     <div class="p-5">
 
                         <p class="text-rose-700 text-xs font-semibold">
-                        POSTERS
+                            POSTERS
                         </p>
 
                         <h3 class="font-bold text-lg mt-1">
@@ -501,7 +615,7 @@
                         </p>
 
                         <h3 class="font-bold text-lg mt-1">
-                           CHIBI
+                            CHIBI
                         </h3>
 
                         <p class="text-stone-400 mt-2">
@@ -736,7 +850,7 @@
                     <div class="p-5">
 
                         <p class="text-rose-700 text-xs font-semibold">
-                           FIGURE
+                            FIGURE
                         </p>
 
                         <h3 class="font-bold text-lg mt-1">
@@ -806,338 +920,325 @@
 
 
 
-  
-<!-- FEATURED CHARACTERS -->
-<section class="bg-white text-neutral-900 py-16">
 
-    <div class="max-w-7xl mx-auto px-8 text-center">
+    <!-- FEATURED CHARACTERS -->
+    <section class="bg-white text-neutral-900 py-16">
 
-        <!-- Heading -->
+        <div class="max-w-7xl mx-auto px-8 text-center">
 
-        <p class="text-rose-700 text-sm font-bold tracking-[0.2em]">
-            DEMON SLAYER CORPS
-        </p>
+            <!-- Heading -->
 
-        <h2 class="text-4xl font-black mt-2">
-            SHOP BY CHARACTER
-        </h2>
+            <p class="text-rose-700 text-sm font-bold tracking-[0.2em]">
+                DEMON SLAYER CORPS
+            </p>
 
-        <p class="text-stone-500 mt-3">
-            Find your favorite character and explore exclusive merchandise.
-        </p>
+            <h2 class="text-4xl font-black mt-2">
+                SHOP BY CHARACTER
+            </h2>
 
-
-        <!-- Characters -->
-
-        <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-x-6 gap-y-10 mt-12">
+            <p class="text-stone-500 mt-3">
+                Find your favorite character and explore exclusive merchandise.
+            </p>
 
 
-            <!-- TANJIRO -->
+            <!-- Characters -->
 
-            <a href="#" class="group">
+            <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-x-6 gap-y-10 mt-12">
 
-                <div class="w-28 h-28 mx-auto rounded-full overflow-hidden
+
+                <!-- TANJIRO -->
+
+                <a href="#" class="group">
+
+                    <div class="w-28 h-28 mx-auto rounded-full overflow-hidden
                             border-4 border-rose-700
                             group-hover:scale-105 transition duration-300">
 
-                    <img src="demon_slayer_products/tanjiro.png"
-                         alt="Tanjiro Kamado"
-                         class="w-full h-full object-cover">
+                        <img src="demon_slayer_products/tanjiro.png" alt="Tanjiro Kamado"
+                            class="w-full h-full object-cover">
 
-                </div>
+                    </div>
 
-                <h3 class="font-bold text-lg mt-3">
-                    TANJIRO
-                </h3>
+                    <h3 class="font-bold text-lg mt-3">
+                        TANJIRO
+                    </h3>
 
-                <p class="text-stone-500 text-xs uppercase tracking-widest">
-                    DEMON SLAYER
-                </p>
+                    <p class="text-stone-500 text-xs uppercase tracking-widest">
+                        DEMON SLAYER
+                    </p>
 
-            </a>
+                </a>
 
 
-            <!-- ZENITSU -->
+                <!-- ZENITSU -->
 
-            <a href="#" class="group">
+                <a href="#" class="group">
 
-                <div class="w-28 h-28 mx-auto rounded-full overflow-hidden
+                    <div class="w-28 h-28 mx-auto rounded-full overflow-hidden
                             border-4 border-rose-700
                             group-hover:scale-105 transition duration-300">
 
-                    <img src="demon_slayer_products/zenitsu.png"
-                         alt="Zenitsu Agatsuma"
-                         class="w-full h-full object-cover">
+                        <img src="demon_slayer_products/zenitsu.png" alt="Zenitsu Agatsuma"
+                            class="w-full h-full object-cover">
 
-                </div>
+                    </div>
 
-                <h3 class="font-bold text-lg mt-3">
-                    ZENITSU
-                </h3>
+                    <h3 class="font-bold text-lg mt-3">
+                        ZENITSU
+                    </h3>
 
-                <p class="text-stone-500 text-xs uppercase tracking-widest">
-                    THUNDER BREATHING
-                </p>
+                    <p class="text-stone-500 text-xs uppercase tracking-widest">
+                        THUNDER BREATHING
+                    </p>
 
-            </a>
+                </a>
 
 
-            <!-- INOSUKE -->
+                <!-- INOSUKE -->
 
-            <a href="#" class="group">
+                <a href="#" class="group">
 
-                <div class="w-28 h-28 mx-auto rounded-full overflow-hidden
+                    <div class="w-28 h-28 mx-auto rounded-full overflow-hidden
                             border-4 border-rose-700
                             group-hover:scale-105 transition duration-300">
 
-                    <img src="demon_slayer_products/enozuke.png"
-                         alt="Inosuke Hashibira"
-                         class="w-full h-70 object-cover">
+                        <img src="demon_slayer_products/enozuke.png" alt="Inosuke Hashibira"
+                            class="w-full h-70 object-cover">
 
-                </div>
+                    </div>
 
-                <h3 class="font-bold text-lg mt-3">
-                    INOSUKE
-                </h3>
+                    <h3 class="font-bold text-lg mt-3">
+                        INOSUKE
+                    </h3>
 
-                <p class="text-stone-500 text-xs uppercase tracking-widest">
-                    BEAST BREATHING
-                </p>
+                    <p class="text-stone-500 text-xs uppercase tracking-widest">
+                        BEAST BREATHING
+                    </p>
 
-            </a>
+                </a>
 
 
-            <!-- NEZUKO -->
+                <!-- NEZUKO -->
 
-            <a href="#" class="group">
+                <a href="#" class="group">
 
-                <div class="w-28 h-28 mx-auto rounded-full overflow-hidden
+                    <div class="w-28 h-28 mx-auto rounded-full overflow-hidden
                             border-4 border-rose-700
                             group-hover:scale-105 transition duration-300">
 
-                    <img src="demon_slayer_products/nezuko.png"
-                         alt="Nezuko Kamado"
-                         class="w-full h-full object-cover">
+                        <img src="demon_slayer_products/nezuko.png" alt="Nezuko Kamado"
+                            class="w-full h-full object-cover">
 
-                </div>
+                    </div>
 
-                <h3 class="font-bold text-lg mt-3">
-                    NEZUKO
-                </h3>
+                    <h3 class="font-bold text-lg mt-3">
+                        NEZUKO
+                    </h3>
 
-                <p class="text-stone-500 text-xs uppercase tracking-widest">
-                    DEMON GIRL
-                </p>
+                    <p class="text-stone-500 text-xs uppercase tracking-widest">
+                        DEMON GIRL
+                    </p>
 
-            </a>
+                </a>
 
 
-            <!-- SHINOBU -->
+                <!-- SHINOBU -->
 
-            <a href="#" class="group">
+                <a href="#" class="group">
 
-                <div class="w-28 h-28 mx-auto rounded-full overflow-hidden
+                    <div class="w-28 h-28 mx-auto rounded-full overflow-hidden
                             border-4 border-rose-700
                             group-hover:scale-105 transition duration-300">
 
-                    <img src="demon_slayer_products/SHINOBU.png"
-                         alt="Shinobu Kocho"
-                         class="w-full h-85 object-cover">
+                        <img src="demon_slayer_products/SHINOBU.png" alt="Shinobu Kocho"
+                            class="w-full h-85 object-cover">
 
-                </div>
+                    </div>
 
-                <h3 class="font-bold text-lg mt-3">
-                    SHINOBU
-                </h3>
+                    <h3 class="font-bold text-lg mt-3">
+                        SHINOBU
+                    </h3>
 
-                <p class="text-stone-500 text-xs uppercase tracking-widest">
-                    INSECT HASHIRA
-                </p>
+                    <p class="text-stone-500 text-xs uppercase tracking-widest">
+                        INSECT HASHIRA
+                    </p>
 
-            </a>
+                </a>
 
 
-            <!-- GIYU -->
+                <!-- GIYU -->
 
-            <a href="#" class="group">
+                <a href="#" class="group">
 
-                <div class="w-28 h-28 mx-auto rounded-full overflow-hidden
+                    <div class="w-28 h-28 mx-auto rounded-full overflow-hidden
                             border-4 border-rose-700
                             group-hover:scale-105 transition duration-300">
 
-                    <img src="demon_slayer_products/giyu.png"
-                         alt="Giyu Tomioka"
-                         class="w-full h-full object-cover">
+                        <img src="demon_slayer_products/giyu.png" alt="Giyu Tomioka" class="w-full h-full object-cover">
 
-                </div>
+                    </div>
 
-                <h3 class="font-bold text-lg mt-3">
-                    GIYU
-                </h3>
+                    <h3 class="font-bold text-lg mt-3">
+                        GIYU
+                    </h3>
 
-                <p class="text-stone-500 text-xs uppercase tracking-widest">
-                    WATER HASHIRA
-                </p>
+                    <p class="text-stone-500 text-xs uppercase tracking-widest">
+                        WATER HASHIRA
+                    </p>
 
-            </a>
+                </a>
 
 
-            <!-- MITSURI -->
+                <!-- MITSURI -->
 
-            <a href="#" class="group">
+                <a href="#" class="group">
 
-                <div class="w-28 h-28 mx-auto rounded-full overflow-hidden
+                    <div class="w-28 h-28 mx-auto rounded-full overflow-hidden
                             border-4 border-rose-700
                             group-hover:scale-105 transition duration-300">
 
-                    <img src="demon_slayer_products/mitsuri.png"
-                         alt="Mitsuri Kanroji"
-                         class="w-full h-full object-cover">
+                        <img src="demon_slayer_products/mitsuri.png" alt="Mitsuri Kanroji"
+                            class="w-full h-full object-cover">
 
-                </div>
+                    </div>
 
-                <h3 class="font-bold text-lg mt-3">
-                    MITSURI
-                </h3>
+                    <h3 class="font-bold text-lg mt-3">
+                        MITSURI
+                    </h3>
 
-                <p class="text-stone-500 text-xs uppercase tracking-widest">
-                    LOVE HASHIRA
-                </p>
+                    <p class="text-stone-500 text-xs uppercase tracking-widest">
+                        LOVE HASHIRA
+                    </p>
 
-            </a>
+                </a>
 
 
-            <!-- MUICHIRO -->
+                <!-- MUICHIRO -->
 
-            <a href="#" class="group">
+                <a href="#" class="group">
 
-                <div class="w-28 h-28 mx-auto rounded-full overflow-hidden
+                    <div class="w-28 h-28 mx-auto rounded-full overflow-hidden
                             border-4 border-rose-700
                             group-hover:scale-105 transition duration-300">
 
-                    <img src="demon_slayer_products/muichiro.png"
-                         alt="Muichiro Tokito"
-                         class="w-full h-full object-cover">
+                        <img src="demon_slayer_products/muichiro.png" alt="Muichiro Tokito"
+                            class="w-full h-full object-cover">
 
-                </div>
+                    </div>
 
-                <h3 class="font-bold text-lg mt-3">
-                    MUICHIRO
-                </h3>
+                    <h3 class="font-bold text-lg mt-3">
+                        MUICHIRO
+                    </h3>
 
-                <p class="text-stone-500 text-xs uppercase tracking-widest">
-                    MIST HASHIRA
-                </p>
+                    <p class="text-stone-500 text-xs uppercase tracking-widest">
+                        MIST HASHIRA
+                    </p>
 
-            </a>
+                </a>
 
 
-            <!-- OBANAI -->
+                <!-- OBANAI -->
 
-            <a href="#" class="group">
+                <a href="#" class="group">
 
-                <div class="w-28 h-28 mx-auto rounded-full overflow-hidden
+                    <div class="w-28 h-28 mx-auto rounded-full overflow-hidden
                             border-4 border-rose-700
                             group-hover:scale-105 transition duration-300">
 
-                    <img src="demon_slayer_products/obanai.png"
-                         alt="Obanai Iguro"
-                         class="w-full h-full object-cover">
+                        <img src="demon_slayer_products/obanai.png" alt="Obanai Iguro"
+                            class="w-full h-full object-cover">
 
-                </div>
+                    </div>
 
-                <h3 class="font-bold text-lg mt-3">
-                    OBANAI
-                </h3>
+                    <h3 class="font-bold text-lg mt-3">
+                        OBANAI
+                    </h3>
 
-                <p class="text-stone-500 text-xs uppercase tracking-widest">
-                    SERPENT HASHIRA
-                </p>
+                    <p class="text-stone-500 text-xs uppercase tracking-widest">
+                        SERPENT HASHIRA
+                    </p>
 
-            </a>
+                </a>
 
 
-            <!-- RENGOKU -->
+                <!-- RENGOKU -->
 
-            <a href="#" class="group">
+                <a href="#" class="group">
 
-                <div class="w-28 h-28 mx-auto rounded-full overflow-hidden
+                    <div class="w-28 h-28 mx-auto rounded-full overflow-hidden
                             border-4 border-rose-700
                             group-hover:scale-105 transition duration-300">
 
-                    <img src="demon_slayer_products/Rengoku.png"
-                         alt="Kyojuro Rengoku"
-                         class="w-full h-full object-cover">
+                        <img src="demon_slayer_products/Rengoku.png" alt="Kyojuro Rengoku"
+                            class="w-full h-full object-cover">
 
-                </div>
+                    </div>
 
-                <h3 class="font-bold text-lg mt-3">
-                    RENGOKU
-                </h3>
+                    <h3 class="font-bold text-lg mt-3">
+                        RENGOKU
+                    </h3>
 
-                <p class="text-stone-500 text-xs uppercase tracking-widest">
-                    FLAME HASHIRA
-                </p>
+                    <p class="text-stone-500 text-xs uppercase tracking-widest">
+                        FLAME HASHIRA
+                    </p>
 
-            </a>
+                </a>
 
 
-            <!-- GYOMEI -->
+                <!-- GYOMEI -->
 
-            <a href="#" class="group">
+                <a href="#" class="group">
 
-                <div class="w-28 h-28 mx-auto rounded-full overflow-hidden
+                    <div class="w-28 h-28 mx-auto rounded-full overflow-hidden
                             border-4 border-rose-700
                             group-hover:scale-105 transition duration-300">
 
-                    <img src="demon_slayer_products/stone.png"
-                         alt="Gyomei Himejima"
-                         class="w-full h-80 object-cover">
+                        <img src="demon_slayer_products/stone.png" alt="Gyomei Himejima"
+                            class="w-full h-80 object-cover">
 
-                </div>
+                    </div>
 
-                <h3 class="font-bold text-lg mt-3">
-                    GYOMEI
-                </h3>
+                    <h3 class="font-bold text-lg mt-3">
+                        GYOMEI
+                    </h3>
 
-                <p class="text-stone-500 text-xs uppercase tracking-widest">
-                    STONE HASHIRA
-                </p>
+                    <p class="text-stone-500 text-xs uppercase tracking-widest">
+                        STONE HASHIRA
+                    </p>
 
-            </a>
+                </a>
 
 
-            <!-- SANEMI -->
+                <!-- SANEMI -->
 
-            <a href="#" class="group">
+                <a href="#" class="group">
 
-                <div class="w-28 h-28 mx-auto rounded-full overflow-hidden
+                    <div class="w-28 h-28 mx-auto rounded-full overflow-hidden
                             border-4 border-rose-700
                             group-hover:scale-105 transition duration-300">
 
-                    <img src="demon_slayer_products/sanemi.png"
-                         alt="Sanemi Shinazugawa"
-                         class="w-full h-full object-cover">
+                        <img src="demon_slayer_products/sanemi.png" alt="Sanemi Shinazugawa"
+                            class="w-full h-full object-cover">
 
-                </div>
+                    </div>
 
-                <h3 class="font-bold text-lg mt-3">
-                    SANEMI
-                </h3>
+                    <h3 class="font-bold text-lg mt-3">
+                        SANEMI
+                    </h3>
 
-                <p class="text-stone-500 text-xs uppercase tracking-widest">
-                    WIND HASHIRA
-                </p>
+                    <p class="text-stone-500 text-xs uppercase tracking-widest">
+                        WIND HASHIRA
+                    </p>
 
-            </a>
+                </a>
 
+
+            </div>
 
         </div>
 
-    </div>
+    </section>
 
-</section>
-       
 
 
     <!-- FOOTER -->

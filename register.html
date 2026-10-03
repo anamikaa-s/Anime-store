@@ -219,25 +219,129 @@
         }
 
 
-        /* MOBILE */
+       
+        /* TABLET */
 
-        @media (max-width: 600px) {
+@media (max-width: 900px) {
 
-            #register {
-                width: 90%;
-                padding: 25px;
-            }
+    body {
+        padding: 30px 20px;
+    }
 
-            .row {
-                flex-direction: column;
-                gap: 0;
-            }
+    #register {
+        width: 90%;
+        max-width: 550px;
+        margin-left: 0;
+        padding: 30px;
+    }
 
-            .home {
-                top: 15px;
-                left: 15px;
-            }
-        }
+    .home {
+        top: 20px;
+        left: 20px;
+    }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 80px 15px 30px;
+        align-items: flex-start;
+    }
+
+    #register {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        padding: 25px 20px;
+        border-radius: 15px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .section-title {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .input-box {
+        height: 46px;
+        padding: 0 13px;
+    }
+
+    .input-box input {
+        font-size: 14px;
+    }
+
+    .row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .row .input-box {
+        width: 100%;
+    }
+
+    #register-btn {
+        height: 45px;
+        font-size: 15px;
+    }
+
+    .home {
+        top: 15px;
+        left: 15px;
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
+
+
+/* VERY SMALL MOBILE */
+
+@media (max-width: 400px) {
+
+    body {
+        padding: 75px 10px 20px;
+    }
+
+    #register {
+        padding: 20px 15px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    .subtitle {
+        font-size: 13px;
+    }
+
+    .section-title {
+        font-size: 15px;
+    }
+
+    .input-box {
+        height: 44px;
+    }
+
+    .input-box input {
+        font-size: 13px;
+    }
+
+    .home {
+        font-size: 13px;
+        padding: 7px 12px;
+    }
+}
     </style>
 
 </head>

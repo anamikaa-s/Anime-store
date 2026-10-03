@@ -21,6 +21,291 @@
                     rgb(90, 2, 2),
                     rgb(90, 2, 2));
         }
+        /* ============================= */
+/* RESPONSIVE NAVBAR */
+/* ============================= */
+
+@media (max-width: 1100px) {
+
+    .navbar {
+        height: auto;
+        min-height: 110px;
+        flex-wrap: wrap;
+        padding: 10px 15px;
+    }
+
+    /* LOGO */
+
+    .navbar > div:first-child {
+        width: 150px;
+    }
+
+    .navbar > div:first-child img {
+        width: 150px;
+        height: 100px;
+    }
+
+    /* ANIME STORE */
+
+    .navbar > div:nth-child(2) {
+        margin-left: 5px;
+    }
+
+    .navbar > div:nth-child(2) h1 {
+        font-size: 28px;
+    }
+
+    /* MENU */
+
+    .navbar > div:nth-child(3) {
+        order: 5;
+        width: 100%;
+        justify-content: center;
+        margin: 8px 0 0 0;
+        flex-wrap: wrap;
+    }
+
+    .navbar > div:nth-child(3) a {
+        font-size: 16px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    /* SEARCH */
+
+    .navbar > div:nth-child(4) {
+        margin-left: auto;
+    }
+
+    .navbar > div:nth-child(4) input {
+        width: 120px;
+    }
+
+    /* ICONS */
+
+    .navbar > div:nth-child(5) {
+        margin-right: 5px;
+    }
+}
+
+
+/* ============================= */
+/* TABLET */
+/* ============================= */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        min-height: 105px;
+        padding: 8px 10px;
+    }
+
+    /* LOGO */
+
+    .navbar > div:first-child {
+        width: 120px;
+    }
+
+    .navbar > div:first-child img {
+        width: 120px;
+        height: 90px;
+        margin-left: -10px;
+    }
+
+    /* ANIME STORE */
+
+    .navbar > div:nth-child(2) h1 {
+        font-size: 24px;
+    }
+
+    .navbar > div:nth-child(2) p {
+        font-size: 9px;
+    }
+
+    /* SEARCH */
+
+    .navbar > div:nth-child(4) input {
+        width: 90px;
+    }
+
+    /* MENU */
+
+    .navbar > div:nth-child(3) a {
+        font-size: 14px;
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+
+    /* ICONS */
+
+    .navbar > div:nth-child(5) {
+        margin-left: 5px;
+    }
+
+    .navbar > div:nth-child(5) a {
+        font-size: 18px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+
+/* ============================= */
+/* MOBILE */
+/* ============================= */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        min-height: 100px;
+        padding: 8px 10px;
+    }
+
+    /* LOGO */
+
+    .navbar > div:first-child {
+        width: 90px;
+    }
+
+    .navbar > div:first-child img {
+        width: 90px;
+        height: 75px;
+        margin-left: -8px;
+    }
+
+    /* ANIME STORE */
+
+    .navbar > div:nth-child(2) {
+        margin-left: 0;
+    }
+
+    .navbar > div:nth-child(2) h1 {
+        font-size: 20px;
+    }
+
+    .navbar > div:nth-child(2) p {
+        font-size: 8px;
+    }
+
+    /* SEARCH */
+
+    .navbar > div:nth-child(4) {
+        margin-left: auto;
+        height: 35px;
+        padding: 0 8px;
+    }
+
+    .navbar > div:nth-child(4) input {
+        width: 70px;
+        font-size: 12px;
+    }
+
+    /* ICONS */
+
+    .navbar > div:nth-child(5) {
+        margin-left: 3px;
+        margin-right: 0;
+    }
+
+    .navbar > div:nth-child(5) a {
+        font-size: 16px;
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+
+    /* MENU */
+
+    .navbar > div:nth-child(3) {
+        gap: 3px;
+        margin-top: 5px;
+    }
+
+    .navbar > div:nth-child(3) a {
+        font-size: 13px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    /* CONTENT */
+
+    section.pt-32 {
+        padding-top: 120px;
+    }
+
+}
+
+
+/* ============================= */
+/* VERY SMALL MOBILE */
+/* ============================= */
+
+@media (max-width: 400px) {
+
+    .navbar {
+        padding: 6px;
+    }
+
+    /* HIDE BIG LOGO */
+
+    .navbar > div:first-child {
+        width: 65px;
+    }
+
+    .navbar > div:first-child img {
+        width: 70px;
+        height: 65px;
+        margin-left: -10px;
+    }
+
+    /* STORE TEXT */
+
+    .navbar > div:nth-child(2) h1 {
+        font-size: 17px;
+    }
+
+    .navbar > div:nth-child(2) p {
+        font-size: 7px;
+    }
+
+    /* SEARCH */
+
+    .navbar > div:nth-child(4) {
+        height: 32px;
+        padding: 0 5px;
+    }
+
+    .navbar > div:nth-child(4) input {
+        width: 55px;
+        font-size: 11px;
+    }
+
+    .navbar > div:nth-child(4) i {
+        font-size: 12px;
+    }
+
+    /* ICONS */
+
+    .navbar > div:nth-child(5) a {
+        font-size: 14px;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+    /* MENU */
+
+    .navbar > div:nth-child(3) a {
+        font-size: 12px;
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+
+    /* WISHLIST CONTENT */
+
+    section.pt-32 {
+        padding-top: 115px;
+    }
+
+}
     </style>
 </head>
 

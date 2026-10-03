@@ -36,9 +36,8 @@
 
         #form {
             width: 400px;
-
             padding: 35px;
-            margin-left: 600px;
+            margin-left: 0;
 
             border: 1px solid rgba(255, 255, 255, 0.5);
             border-radius: 20px;
@@ -227,8 +226,8 @@
             margin-top: 12px;
             cursor: pointer;
             font-family: Arial, sans-serif;
-    font-size: 16px;
-    font-weight: bold;
+            font-size: 16px;
+            font-weight: bold;
         }
 
         #account:hover {
@@ -271,30 +270,178 @@
             margin-right: 8px;
         }
 
-        .home-btn {
-            position: absolute;
-            top: 30px;
-            left: 40px;
+        /* HOME BUTTON */
 
-            color: white;
-            text-decoration: none;
+.home-btn {
+    position: absolute;
 
-            font-size: 18px;
-            font-weight: bold;
+    top: 30px;
+    left: 40px;
 
-            padding: 10px 20px;
+    color: white;
+    text-decoration: none;
 
-            border: 1px solid white;
-            border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
 
-            background: rgba(0, 0, 0, 0.3);
+    padding: 10px 20px;
 
-            transition: 0.3s;
+    border: 1px solid white;
+    border-radius: 25px;
+
+    background: rgba(0, 0, 0, 0.3);
+
+    transition: 0.3s;
+}
+
+.home-btn:hover {
+    background: white;
+    color: black;
+}
+        /* TABLET */
+
+        @media (max-width: 900px) {
+
+            body {
+                padding: 30px 20px;
+            }
+
+            #form {
+                width: 90%;
+                max-width: 400px;
+                margin-left: 0;
+                padding: 30px;
+            }
+
+            .home-btn {
+                top: 20px;
+                left: 20px;
+                font-size: 16px;
+                padding: 9px 17px;
+            }
         }
 
-        .home-btn:hover {
-            background: white;
-            color: black;
+
+        /* MOBILE */
+
+        @media (max-width: 600px) {
+
+            body {
+                padding: 80px 15px 30px;
+                align-items: flex-start;
+            }
+
+            #form {
+                width: 100%;
+                max-width: 400px;
+                margin-left: 0;
+                padding: 25px 20px;
+                border-radius: 15px;
+            }
+
+            h1 {
+                font-size: 27px;
+                margin-bottom: 25px;
+            }
+
+            #d1,
+            #d2 {
+                height: 46px;
+                padding: 0 13px;
+            }
+
+            #d1 input,
+            #d2 input {
+                font-size: 14px;
+            }
+
+            .options {
+                font-size: 13px;
+                margin: 12px 2px 22px;
+            }
+
+            #login,
+            #account,
+            #google {
+                height: 44px;
+            }
+
+            #account {
+                line-height: 44px;
+                font-size: 15px;
+            }
+
+            #login {
+                font-size: 15px;
+            }
+
+            #google {
+                font-size: 14px;
+            }
+
+            .home-btn {
+                top: 15px;
+                left: 15px;
+                font-size: 14px;
+                padding: 8px 15px;
+            }
+        }
+
+
+        /* VERY SMALL MOBILE */
+
+        @media (max-width: 400px) {
+
+            body {
+                padding: 75px 10px 20px;
+            }
+
+            #form {
+                padding: 20px 15px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            #d1,
+            #d2 {
+                height: 44px;
+            }
+
+            #d1 input,
+            #d2 input {
+                font-size: 13px;
+            }
+
+            .options {
+                font-size: 12px;
+            }
+
+            .remember input {
+                width: 13px;
+                height: 13px;
+            }
+
+            #login,
+            #account,
+            #google {
+                height: 42px;
+            }
+
+            #account {
+                line-height: 42px;
+                font-size: 14px;
+            }
+
+            #google {
+                font-size: 13px;
+            }
+
+            .home-btn {
+                font-size: 13px;
+                padding: 7px 12px;
+            }
         }
     </style>
 
